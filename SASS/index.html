@@ -4,14 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width-device-width, inital-scale=1.0">
         <title>Produkter</title>
-        <link rel="stylesheet" href="css.style">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_bag" />
+        <link rel="stylesheet" href="ikoner/css/solid.css">
+        <link rel="stylesheet" href="ikoner/css/fontawesome.css">
+        <link rel="stylesheet" href="ikoner/css/brands.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <header>
             <form>
                     <label for="search">Søk</label>
-                    <input type="search" placeholder="Søk her" id="search">
+                    <input type="search" placeholder="Søk her" id="search" >
                     <input type="submit" value="søk">
             </form>
             <nav>
@@ -32,7 +34,7 @@
                         <a href="#Kontakt">Kontakt oss</a>
                     </li>
                     <li>
-                         <a href="#checkout.html" class="material-symbols-outlined">shopping_bag</a>
+                        <a href="#checkout.html" class="fa-solid fa-cart-shopping"></a>
                     </li>
                 </ul>
             </nav>
@@ -52,13 +54,23 @@
             </section>
             <section id="Anmeldelser">
                 <h2>Anmeldelser</h2>
+                <article>
+                    <h3>Kitten blue</h3>
+                    <img src="bilder/cat-3336579_640.jpg" alt="katt">
+                    Image by <a href="https://pixabay.com/users/adinavoicu-485024/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3336579">Adina Voicu</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3336579">Pixabay</a>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>Phasellus quis dolor lorem. Nulla facilisi. Vivamus nunc augue, iaculis sit amet turpis vitae, sollicitudin pharetra magna. Proin nisi odio, lobortis nec rhoncus at, vulputate sed ipsum. Morbi turpis mauris, mattis sed orci non, ultrices bibendum urna. Sed non dolor nulla. Donec vel odio dolor. Etiam convallis neque ut lectus suscipit porttitor. Vestibulum quis enim sit amet diam tincidunt blandit. Mauris et imperdiet risus, vitae feugiat mauris. Proin laoreet elit eu odio pretium aliquam. Donec eget nisl fermentum, molestie purus sit amet, lacinia augue. Nulla eget elit tincidunt, imperdiet magna sagittis, congue libero. Duis aliquet mattis mauris.</p>
+                </article>
             </section>
         </main>
         <footer>
             <section id="logo-ingress">
                 <h1>LOGO</h1>
                 <p>Vestibulum rutrum mauris aliquam, aliquet magna at, volutpat leo. Nullam lobortis vehicula ullamcorper.</p>
-                <a href="#">Les mer</a>
             </section>
             <section id="Kontakt">
                 <h3>KONTAKT</h3>
@@ -79,16 +91,26 @@
             </section>
             <section id="snarveier">
                 <h3>SNARVEIER</h3>
-                <a href="#produkter">Produkter</a>
-                <a href="#kategorier">Kategorier</a>
-                <a href="#Kontakt">Kontakt oss</a>
+                <nav>
+                  <ol>
+                     <li>
+                         <a href="#produkter">Produkter</a>
+                     </li>
+                     <li>
+                         <a href="#kategorier">Kategorier</a>
+                     </li>
+                     <li>
+                         <a href="#Kontakt">Kontakt oss</a>
+                     </li>
+                  </ol>
+                </nav>  
             </section>
             <section>
                 <h3>SOSIALE MEDIER</h3>
-                   <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-                   <a href="https://www.instagram.com/" target="_blank">instagram</a>
-                   <a href="https://www.pinterest.com/" target="_blank">Pintrest</a>
-                   <a href="https://www.linkedin.com/" target="_blank">linkedin</a>
+                   <a href="https://www.facebook.com/" target="_blank" class="fa-brands fa-facebook"></a>
+                   <a href="https://www.instagram.com/" target="_blank" class="fa-brands fa-instagram"></a>
+                   <a href="https://www.pinterest.com/" target="_blank" class="fa-brands fa-pinterest"></a>
+                   <a href="https://www.linkedin.com/" target="_blank" class="fa-brands fa-linkedin"></a>
             </section>
         </footer>
 
