@@ -3,6 +3,7 @@
 @use 'fonts.scss';
 @use 'breadcrumb.scss';
 @use 'buttons.scss';
+@use 'colors.scss' as *;
 *{
     box-sizing: border-box;
 }
@@ -15,7 +16,6 @@ h3{font-size: 1.1rem;}
 h4{font-size: 0.9rem;}
 p, a{font-size: 0.7rem;}
 
-.banner-read{
-    padding: 1rem;
+#banner a{
     text-decoration: none;
 }
