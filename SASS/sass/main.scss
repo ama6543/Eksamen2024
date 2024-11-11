@@ -1,14 +1,21 @@
 @use 'mixins.scss';
 @use 'globalheader.scss';
 @use 'fonts.scss';
+@use 'breadcrumb.scss';
+@use 'buttons.scss';
 *{
     box-sizing: border-box;
 }
 html{
     font-size: calc(1em + 1vw);
 }
-h1{font-size: 2rem;}
-h2{font-size: 1.8rem;}
-h3{font-size: 1.6rem;}
-h4{font-size: 1.4rem;}
-p, a{font-size: 1rem;}
+h1{font-size: 1.5rem;}
+h2{font-size: 1.3rem;}
+h3{font-size: 1.1rem;}
+h4{font-size: 0.9rem;}
+p, a{font-size: 0.7rem;}
+
+.banner-read{
+    padding: 1rem;
+    text-decoration: none;
+}

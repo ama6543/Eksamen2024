@@ -1,7 +1,6 @@
 @use 'colors.scss' as *;
 #globale-header{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
@@ -17,6 +16,10 @@
         a{
             text-decoration: none;
             color: $grey;
+            &:hover{
+                color: $hover;
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -30,6 +33,10 @@
         a{
             text-decoration: none;
             color: $grey;
+            &:hover{
+                color: $hover;
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -37,19 +44,27 @@
     display: flex;
     flex-wrap: wrap;
     label{
+        display: flex;
         border: 1px solid rgb(50, 50, 50);
-        border-radius: 5px;
+        padding: 3px;
+        border-radius: 15px;
+        align-items: center;
         input{
             border: none;
         }
     }
 }
 .fa-solid.fa-magnifying-glass{
-    font-size: large;
+    font-size: medium;
 }
-nav{
+.header-nav{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    li{
+        span{
+            font-size: xx-large;
+        }
+    }
 }

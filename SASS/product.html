@@ -13,7 +13,7 @@
     <body>
         <div id="grid-container">
          <header id="global-header">
-            <nav>
+            <nav class="header-nav">
               <form class="flex-search">
                   <label>
                       <input type="search" placeholder="Søk her">
@@ -28,7 +28,7 @@
                           <a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#Produkter">Produkter</a>
                      </li>
                      <li>
-                         <a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#index.html">LOGO</a>
+                         <a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#index.html"><span>LOGO</span></a>
                      </li>
                      <li>
                         <a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#Katergorier">Kategorier</a>
@@ -58,7 +58,31 @@
             </ul>
         </section>
          <main>
+            <picture>
+             <!--Image by <a href="https://pixabay.com/users/pedroml-1724523/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8557635">Pedro ml</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8557635">Pixabay</a>-->
+              <img src="bilder/T-skjorte_640.jpg" alt="en hvit t-skjorte">
+            </picture>
+            <h3>Produktnavn</h3>
+            <a href="#">MERKENAVN</a>
+            <p>599 kr inkl. mva</p>
+            <p>Farge: hvit</p>
+            <label>
+               <select name="velg størrelse" required>
+                   <option value="" disabled selected hidden>Velg størrelse</option>
+                   <option value="36">36</option>
+                   <option value="37">37</option>
+                   <option value="38">38</option>
+                   <option value="39">39</option>
+                   <option value="40">40</option>
+               </select>
+            </label>
+            <label>
+                <input type="submit" value="Legg i handlekurven">
+                <i class="fa-regular fa-heart"></i>
+            </label>
          </main>
+         <aside>
+         </aside>
          <footer>
             <section id="logo-ingress">
                 <h1>LOGO</h1>
