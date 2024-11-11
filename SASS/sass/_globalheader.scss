@@ -1,0 +1,55 @@
+@use 'colors.scss' as *;
+#globale-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+.flex-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    li{
+        a{
+            text-decoration: none;
+            color: $grey;
+        }
+    }
+}
+.flex-menu-2{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    li{
+        a{
+            text-decoration: none;
+            color: $grey;
+        }
+    }
+}
+.flex-search{
+    display: flex;
+    flex-wrap: wrap;
+    label{
+        border: 1px solid rgb(50, 50, 50);
+        border-radius: 5px;
+        input{
+            border: none;
+        }
+    }
+}
+.fa-solid.fa-magnifying-glass{
+    font-size: large;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

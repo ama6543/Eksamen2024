@@ -1,0 +1,87 @@
+#globale-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.flex-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  margin: 0;
+}
+.flex-menu li a {
+  text-decoration: none;
+  color: rgb(75, 75, 75);
+}
+
+.flex-menu-2 {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1rem;
+  margin: 0;
+}
+.flex-menu-2 li a {
+  text-decoration: none;
+  color: rgb(75, 75, 75);
+}
+
+.flex-search {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-search label {
+  border: 1px solid rgb(50, 50, 50);
+  border-radius: 5px;
+}
+.flex-search label input {
+  border: none;
+}
+
+.fa-solid.fa-magnifying-glass {
+  font-size: large;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(1em + 1vw);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+p, a {
+  font-size: 1rem;
+}/*# sourceMappingURL=main.css.map */
