@@ -7,6 +7,7 @@
 @use 'layout.scss';
 *{
     box-sizing: border-box;
+    max-width: 1200px;
 }
 html{
     font-size: calc(1em + 1vw);

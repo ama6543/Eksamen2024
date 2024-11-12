@@ -93,41 +93,65 @@ ul.breadcrumb li + li::before {
   color: black;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 #grid-container2 {
-  width: -moz-fit-content;
-  width: fit-content;
   display: grid;
-  gap: 1rem;
-  justify-content: center;
-  grid-template-areas: "kategori1 kategori2 kategori3" "kategori4 kategori4 kategori3" "kategori4 kategori4 kategori5";
+  justify-content: start;
+  grid-template-areas: "item1 item2 item3" "item4 item4 item3" "item4 item4 item5";
 }
 
-#kategori-1 {
-  grid-area: kategori1;
-}
-
-#kategori-2 {
-  grid-area: kategori2;
-}
-
-#kategori-3 {
-  grid-area: kategori3;
-}
-
-#kategori-4 {
-  grid-area: kategori4;
-}
-
-#kategori-5 {
-  grid-area: kategori5;
+#item-1 {
   position: relative;
+  grid-area: item1;
+  margin: 0;
+  padding: 0;
 }
-#kategori-5 h3 {
+#item-1 img {
+  display: grid;
+  max-width: 386px;
+}
+
+#item-2 {
+  position: relative;
+  grid-area: item2;
+  margin: 0;
+  padding: 0;
+}
+#item-2 img {
+  display: grid;
+  max-width: 386px;
+}
+
+#item-3 {
+  position: relative;
+  grid-area: item3;
+  margin: 0;
+  padding: 0;
+}
+#item-3 img {
+  display: grid;
+}
+
+#item-4 {
+  position: relative;
+  grid-area: item4;
+  margin: 0;
+  padding: 0;
+}
+#item-4 img {
+  display: grid;
+}
+
+.overlay {
   position: absolute;
 }
 
 * {
   box-sizing: border-box;
+  max-width: 1200px;
 }
 
 html {
