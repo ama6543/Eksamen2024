@@ -1,6 +1,6 @@
 @use 'colors.scss' as *;
-#grid-container-2{
-    width: 60%;
+#grid-container2{
+    width: fit-content;
     display: grid;
     gap: 1rem;
     justify-content: center;
@@ -22,10 +22,8 @@
 }
 #kategori-5{
     grid-area: kategori5;
-}
-.banner-read{
-    padding: 1rem;
-    background-color: $button;
-    text-decoration: none;
-    color: white;
+    position: relative;
+    h3{
+        position: absolute;
+    }
 }

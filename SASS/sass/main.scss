@@ -4,6 +4,7 @@
 @use 'breadcrumb.scss';
 @use 'buttons.scss';
 @use 'colors.scss' as *;
+@use 'layout.scss';
 *{
     box-sizing: border-box;
 }
@@ -16,6 +17,3 @@ h3{font-size: 1.1rem;}
 h4{font-size: 0.9rem;}
 p, a{font-size: 0.7rem;}
 
-#banner a{
-    text-decoration: none;
-}
