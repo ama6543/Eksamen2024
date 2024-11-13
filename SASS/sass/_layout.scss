@@ -1,12 +1,15 @@
 *{
     box-sizing: border-box;
+    max-width: 1200px;
 }
-#grid-container2{
+#container{
     display: grid;
-    justify-content: start;
-    grid-template-areas: "item1 item2 item3"
-                          "item4 item4 item3"
-                          "item4 item4 item5";
+    justify-content: center;
+    margin: 1rem;
+    max-width: 1200px;
+    gap: 1rem;
+    grid-template-areas: "item3 item2 item5"
+                          "item1 item4 item4";
 }
 #item-1{
     position: relative;
@@ -16,6 +19,8 @@
     img{
         display: grid;
         max-width: 386px;
+        max-height: 400px;
+        width: 350px;
     }
 }
 #item-2{
@@ -26,6 +31,8 @@
     img{
         display: grid;
         max-width: 386px;
+        height: 400px;
+        max-height: 400px;
     }
 }
 #item-3{
@@ -35,6 +42,8 @@
     padding: 0;
     img{
         display: grid;
+        max-width: 386px;
+        max-height: 400px;
     }
 }
 #item-4{
@@ -44,8 +53,31 @@
     padding: 0;
     img{
         display: grid;
+        max-width: 850px;
+        width: 850px;
+        max-height: 400px;
+        height: 320px;
+    }
+}
+#item-5{
+    position: relative;
+    grid-area: item5;
+    margin: 0;
+    padding: 0;
+    img{
+        display: grid;
+        max-width: 386px;
+        max-height: 400px;
     }
 }
 .overlay{
     position: absolute;
+    display: grid;
+    justify-content: center;
+}
+#container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
 }
