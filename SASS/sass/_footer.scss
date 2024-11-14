@@ -1,0 +1,30 @@
+@use 'colors.scss' as *;
+footer {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+}
+#kontakt{
+    ul{
+        list-style: none;
+    a{
+        text-decoration: none;
+    }
+  }
+}
+#snarveier{
+    ul{
+        list-style: none;
+    a{
+        text-decoration: none;
+        color: $grey;
+    }
+  }
+}
+#sosiale-medier{
+    a{
+        text-decoration: none;
+        color: $grey;
+    }
+}
