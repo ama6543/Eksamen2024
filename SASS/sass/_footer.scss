@@ -1,9 +1,15 @@
 @use 'colors.scss' as *;
 footer {
+    position: relative;
     display: flex;
     justify-content: space-between;
     row-gap: 1rem;
     flex-wrap: wrap;
+}
+#column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 #kontakt{
     ul{

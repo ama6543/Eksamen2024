@@ -72,15 +72,24 @@
     }
 }
 .overlay{
+    width: 100%;
     position: absolute;
     display: grid;
+    justify-content: center;
 }
 #container img{
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
 }
-main h2{
-    display: flex;
-    justify-content: center;
+#Kategorier{
+    h2{
+        display: grid;
+        justify-content: center;
+    }
+    p{
+        display: grid;
+        justify-content: center;
+    }
 }
+
