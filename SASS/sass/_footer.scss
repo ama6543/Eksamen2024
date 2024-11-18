@@ -1,36 +1,34 @@
 @use 'colors.scss' as *;
-footer {
-    position: relative;
+footer{
+    text-align: start;
+}
+#footer-container{
     display: flex;
     justify-content: space-between;
-    row-gap: 1rem;
-    flex-wrap: wrap;
-}
-#column{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
 }
 #kontakt{
-    ul{
-        list-style: none;
-    a{
-        text-decoration: none;
+    #Adresse{
+        display: inline-block;
     }
-  }
+    #Telefon{
+        display: inline-block;
+    }
 }
 #snarveier{
     ul{
         list-style: none;
     a{
         text-decoration: none;
-        color: $grey;
+        color: black;
     }
   }
 }
 #sosiale-medier{
     a{
         text-decoration: none;
-        color: $grey;
+        color: black;
+    }
+    i{
+        font-size: medium;
     }
 }

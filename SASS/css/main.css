@@ -15,7 +15,7 @@
 }
 .flex-menu li a {
   text-decoration: none;
-  color: rgb(75, 75, 75);
+  color: black;
 }
 .flex-menu li a:hover {
   color: rgb(0, 119, 255);
@@ -31,7 +31,7 @@
 }
 .flex-menu-2 li a {
   text-decoration: none;
-  color: rgb(75, 75, 75);
+  color: black;
 }
 .flex-menu-2 li a:hover {
   color: rgb(0, 119, 255);
@@ -114,8 +114,6 @@ ul.breadcrumb li + li::before {
 #container {
   display: grid;
   justify-content: center;
-  align-items: center;
-  margin: 1rem;
   max-width: 1200px;
   gap: 1rem;
   grid-template-areas: "item3 item2 item1" "item5 item4 item4";
@@ -127,24 +125,12 @@ ul.breadcrumb li + li::before {
   margin: 0;
   padding: 0;
 }
-#item-1 img {
-  display: grid;
-  max-width: 386px;
-  width: 357;
-  max-height: 400px;
-  width: 350px;
-}
 
 #item-2 {
   position: relative;
   grid-area: item2;
   margin: 0;
   padding: 0;
-}
-#item-2 img {
-  display: grid;
-  width: 357px;
-  height: 400px;
 }
 
 #item-3 {
@@ -153,24 +139,12 @@ ul.breadcrumb li + li::before {
   margin: 0;
   padding: 0;
 }
-#item-3 img {
-  display: grid;
-  height: 400px;
-  width: 357px;
-}
 
 #item-4 {
   position: relative;
   grid-area: item4;
   margin: 0;
   padding: 0;
-}
-#item-4 img {
-  display: grid;
-  max-width: 850px;
-  width: 850px;
-  max-height: 400px;
-  height: 400px;
 }
 
 #item-5 {
@@ -179,24 +153,22 @@ ul.breadcrumb li + li::before {
   margin: 0;
   padding: 0;
 }
-#item-5 img {
-  display: grid;
-  height: 400px;
-  width: 357px;
-}
 
 .overlay {
   width: 100%;
+  height: 100%;
   position: absolute;
   display: grid;
   justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: beige;
 }
 
 #container img {
   width: 100%;
+  height: 100%;
   border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 #Kategorier h2 {
@@ -204,29 +176,24 @@ ul.breadcrumb li + li::before {
   justify-content: center;
 }
 #Kategorier p {
-  display: grid;
+  display: flex;
   justify-content: center;
 }
 
 footer {
-  position: relative;
+  text-align: start;
+}
+
+#footer-container {
   display: flex;
   justify-content: space-between;
-  row-gap: 1rem;
-  flex-wrap: wrap;
 }
 
-#column {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+#kontakt #Adresse {
+  display: inline-block;
 }
-
-#kontakt ul {
-  list-style: none;
-}
-#kontakt ul a {
-  text-decoration: none;
+#kontakt #Telefon {
+  display: inline-block;
 }
 
 #snarveier ul {
@@ -234,25 +201,29 @@ footer {
 }
 #snarveier ul a {
   text-decoration: none;
-  color: rgb(75, 75, 75);
+  color: black;
 }
 
 #sosiale-medier a {
   text-decoration: none;
-  color: rgb(75, 75, 75);
+  color: black;
+}
+#sosiale-medier i {
+  font-size: medium;
 }
 
-#flex-container h2 {
+#flex-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+#flex-container h2 {
+  text-align: center;
 }
 #flex-container #best {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 #flex-container .btn-group {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   gap: 1em;
   margin: 15px;
 }
@@ -281,39 +252,92 @@ footer {
   padding: 0;
 }
 
-#Anmeldelser h2 {
-  display: flex;
-  justify-content: center;
+#Anmeldelser {
+  border-bottom: 1px solid rgb(168, 168, 168);
+  padding: 0 0 40px 0;
+  text-align: start;
+  display: inline-block;
+  width: 100%;
 }
 #Anmeldelser img {
   border-radius: 100%;
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
+}
+#Anmeldelser article {
+  max-width: 275px;
+  display: inline-block;
+  white-space: wrap;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 7px;
+  border: 1px solid rgb(148, 148, 148);
+}
+#Anmeldelser article h3 {
+  margin: 0;
+  padding: 0;
 }
 
-#anmeldelse-container {
+#banner {
+  position: relative;
+  overflow: hidden;
+  max-height: 500px;
+  margin: 0;
+  padding: 0;
+  text-align: end;
+}
+#banner header {
+  position: absolute;
+  width: 50%;
+  height: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-* {
+img {
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+}
+
+.head-banner {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+s * {
   box-sizing: border-box;
   max-width: 1200px;
 }
 
 html {
   font-size: calc(1em + 1vw);
+  text-align: center;
+  margin: 0 auto;
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 h3 {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 h4 {
@@ -321,5 +345,14 @@ h4 {
 }
 
 p, a {
+  font-size: 0.5rem;
+}
+
+i {
   font-size: 0.6rem;
+}
+
+body {
+  display: grid;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

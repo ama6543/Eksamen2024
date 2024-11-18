@@ -11,7 +11,6 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <div id="grid-container">
          <header id="global-header">
             <nav class="header-nav">
               <form class="flex-search">
@@ -52,18 +51,38 @@
          </header>
           <main>
              <section id="banner">
-                 <h2>Vestibulum rutrum mauris aliquam, aliquet magna at, volutpat leo. Nullam lobortis vehicula ullamcorper.</h2>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet congue nulla. Curabitur nec est bibendum, auctor metus at, volutpat purus. Integer augue nulla, vehicula ut cursus sed, luctus non turpis. Sed at aliquam tellus, sit amet scelerisque lacus. Pellentesque commodo facilisis nisi et egestas. </p>
+                <header>
+                <h2>Vestibulum rutrum mauris aliquam, aliquet magna at, volutpat leo.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet congue nulla. Curabitur nec est bibendum, auctor metus at, volutpat purus. Integer augue nulla, vehicula ut cursus sed, luctus non turpis.</p>
+                <a href="#">Les mer</a>
+                </header>
+                <img src="bilder/sprayperfume_640.jpg" alt="Parfyme som blir sprayet">
+                <!--Image by <a href="https://pixabay.com/users/avakaphoto-3757717/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6399434">AVAKA photo</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6399434">Pixabay</a>-->
+                 <img src="bilder/sunset_640.jpg" alt="sol nedgang">
+                <!--Image by <a href="https://pixabay.com/users/kordi_vahle-4934524/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3726030">kordula vahle</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3726030">Pixabay</a>-->
+                 <h2>Vestibulum rutrum mauris aliquam, aliquet magna at, volutpat leo.</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet congue nulla. Curabitur nec est bibendum, auctor metus at, volutpat purus. Integer augue nulla, vehicula ut cursus sed, luctus non turpis.</p>
                  <a href="#">Les mer</a>
+                 <div class="mySlides fade">
+                 <img src="bilder/pathway_640.jpg" alt="Parfyme som blir sprayet">
+                <!--Image by <a href="https://pixabay.com/users/felix_merler-3317441/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5812488">Felix Merler</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5812488">Pixabay</a>-->
+                 <h2>Vestibulum rutrum mauris aliquam, aliquet magna at, volutpat leo.</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet congue nulla. Curabitur nec est bibendum, auctor metus at, volutpat purus. Integer augue nulla, vehicula ut cursus sed, luctus non turpis.</p>
+                 <a href="#">Les mer</a>
+                 </div>
+                 <div>
+                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                 </div>
              </section>
              <section id="flex-container">
                  <h2>Våre mest populære produkter</h2>
                  <p id="best">Oppdag det beste av det beste</p>
-                      <div class="btn-group">
+                      <i class="btn-group">
                          <button>New Products</button>
                          <button>Special Price</button>
                          <button>Best Sellers</button>
-                      </div>
+                      </i>
                    <div id="product-card">
                    <article>
                      <picture>
@@ -75,12 +94,11 @@
                      <div id="pp">
                      <h4>Produkt navn</h4>
                      <p class="produkt-pris">kr 799</p>
+                     <p><i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-regular fa-star"></i>
-                     <p>842 Reviews</p>
+                     <i class="fa-regular fa-star"></i> 842 Reviews</p>
                      </div>
                    </article>
                    <article>
@@ -92,12 +110,11 @@
                      </picture>
                      <h4>Produkt navn</h4>
                      <p class="produkt-pris">kr 799</p>
+                     <p><i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-regular fa-star"></i>
-                     <p>842 Reviews</p>
+                     <i class="fa-regular fa-star"></i> 842 Reviews</p>
                    </article>
                    <article>
                      <picture>
@@ -108,12 +125,11 @@
                      </picture>
                      <h4>Produkt navn</h4>
                      <p class="produkt-pris">kr 799</p>
+                     <p><i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-regular fa-star"></i>
-                     <p>842 Reviews</p>
+                     <i class="fa-regular fa-star"></i> 842 Reviews</p>
                    </article>
                    <article>
                      <picture>
@@ -124,12 +140,11 @@
                      </picture>
                      <h4>Produkt navn</h4>
                      <p class="produkt-pris">kr 799</p>
+                     <p><i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-regular fa-star"></i>
-                     <p>842 Reviews</p>
+                     <i class="fa-regular fa-star"></i> 842 Reviews</p>
                    </article>
                    <article>
                      <picture>
@@ -140,12 +155,11 @@
                      </picture>
                      <h4>Produkt navn</h4>
                      <p class="produkt-pris">kr 799</p>
+                     <p><i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-regular fa-star"></i>
-                     <p>842 Reviews</p>
+                     <i class="fa-regular fa-star"></i> 842 Reviews</p>
                    </article>
                    <article>
                      <picture>
@@ -156,12 +170,11 @@
                     </picture>
                     <h4>Produkt navn</h4>
                      <p class="produkt-pris">kr 799</p>
+                     <p><i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
-                     <i class="fa-solid fa-star"></i>
-                     <i class="fa-regular fa-star"></i>
-                     <p>842 Reviews</p>
+                     <i class="fa-regular fa-star"></i> 842 Reviews</p>
                    </article>
                   </div> 
               </section>
@@ -196,77 +209,65 @@
               </section>
               <section id="Anmeldelser">
                   <h2>Anmeldelser</h2>
-                 <div id="anmeldelse-container">
                   <article>
-                     <h3>Kitten blue</h3>
                      <img src="bilder/cat-3336579_640.jpg" alt="katt">
                      <!--Image by <a href="https://pixabay.com/users/adinavoicu-485024/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3336579">Adina Voicu</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3336579">Pixabay</a>-->
+                     <h3>Kitten blue</h3>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star-half-stroke"></i>
                      <i class="fa-regular fa-star"></i>
-                     <p>Phasellus quis dolor lorem. Nulla facilisi. Vivamus nunc augue, iaculis sit amet turpis vitae, sollicitudin pharetra magna. Proin nisi odio, lobortis nec rhoncus at, vulputate sed ipsum. Morbi turpis mauris, mattis sed orci non, ultrices bibendum urna. Sed non dolor nulla. Donec vel odio dolor. Etiam convallis neque ut lectus suscipit porttitor. Vestibulum quis enim sit amet diam tincidunt blandit. Mauris et imperdiet risus, vitae feugiat mauris. Proin laoreet elit eu odio pretium aliquam. Donec eget nisl fermentum, molestie purus sit amet, lacinia augue. Nulla eget elit tincidunt, imperdiet magna sagittis, congue libero. Duis aliquet mattis mauris.</p>
+                     <p>Phasellus quis dolor lorem. Nulla facilisi. Vivamus nunc augue, iaculis sit amet turpis vitae, sollicitudin pharetra magna. Proin nisi odio, lobortis nec rhoncus at, vulputate sed ipsum. Morbi turpis mauris, mattis sed orci non, ultrices bibendum urna. Sed non dolor nulla. Donec vel odio dolor. Etiam convallis neque ut lectus suscipit porttitor. Vestibulum quis enim sit amet diam tincidunt blandit. Mauris et imperdiet risus, vitae feugiat mauris. Proin laoreet elit eu odio pretium aliquam.</p>
                  </article>
                  <article>
-                     <h3>Kitten blue</h3>
                      <img src="bilder/cat-3336579_640.jpg" alt="katt">
                      <!--Image by <a href="https://pixabay.com/users/adinavoicu-485024/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3336579">Adina Voicu</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3336579">Pixabay</a>-->
+                     <h3>Kitten blue</h3>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star-half-stroke"></i>
                      <i class="fa-regular fa-star"></i>
-                     <p>Phasellus quis dolor lorem. Nulla facilisi. Vivamus nunc augue, iaculis sit amet turpis vitae, sollicitudin pharetra magna. Proin nisi odio, lobortis nec rhoncus at, vulputate sed ipsum. Morbi turpis mauris, mattis sed orci non, ultrices bibendum urna. Sed non dolor nulla. Donec vel odio dolor. Etiam convallis neque ut lectus suscipit porttitor. Vestibulum quis enim sit amet diam tincidunt blandit. Mauris et imperdiet risus, vitae feugiat mauris. Proin laoreet elit eu odio pretium aliquam. Donec eget nisl fermentum, molestie purus sit amet, lacinia augue. Nulla eget elit tincidunt, imperdiet magna sagittis, congue libero. Duis aliquet mattis mauris.</p>
+                     <p>Phasellus quis dolor lorem. Nulla facilisi. Vivamus nunc augue, iaculis sit amet turpis vitae, sollicitudin pharetra magna. Proin nisi odio, lobortis nec rhoncus at, vulputate sed ipsum. Morbi turpis mauris, mattis sed orci non, ultrices bibendum urna. Sed non dolor nulla. Donec vel odio dolor. Etiam convallis neque ut lectus suscipit porttitor. Vestibulum quis enim sit amet diam tincidunt blandit. Mauris et imperdiet risus, vitae feugiat mauris. Proin laoreet elit eu odio pretium aliquam.</p>
                  </article>
                  <article>
-                     <h3>Kitten blue</h3>
                      <img src="bilder/cat-3336579_640.jpg" alt="katt">
                      <!--Image by <a href="https://pixabay.com/users/adinavoicu-485024/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3336579">Adina Voicu</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3336579">Pixabay</a>-->
+                     <h3>Kitten blue</h3>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star-half-stroke"></i>
                      <i class="fa-regular fa-star"></i>
-                     <p>Phasellus quis dolor lorem. Nulla facilisi. Vivamus nunc augue, iaculis sit amet turpis vitae, sollicitudin pharetra magna. Proin nisi odio, lobortis nec rhoncus at, vulputate sed ipsum. Morbi turpis mauris, mattis sed orci non, ultrices bibendum urna. Sed non dolor nulla. Donec vel odio dolor. Etiam convallis neque ut lectus suscipit porttitor. Vestibulum quis enim sit amet diam tincidunt blandit. Mauris et imperdiet risus, vitae feugiat mauris. Proin laoreet elit eu odio pretium aliquam. Donec eget nisl fermentum, molestie purus sit amet, lacinia augue. Nulla eget elit tincidunt, imperdiet magna sagittis, congue libero. Duis aliquet mattis mauris.</p>
+                     <p>Phasellus quis dolor lorem. Nulla facilisi. Vivamus nunc augue, iaculis sit amet turpis vitae, sollicitudin pharetra magna. Proin nisi odio, lobortis nec rhoncus at, vulputate sed ipsum. Morbi turpis mauris, mattis sed orci non, ultrices bibendum urna. Sed non dolor nulla. Donec vel odio dolor. Etiam convallis neque ut lectus suscipit porttitor. Vestibulum quis enim sit amet diam tincidunt blandit. Mauris et imperdiet risus, vitae feugiat mauris. Proin laoreet elit eu odio pretium aliquam.</p>
                  </article>
                  <article>
-                     <h3>Kitten blue</h3>
                      <img src="bilder/cat-3336579_640.jpg" alt="katt">
                      <!--Image by <a href="https://pixabay.com/users/adinavoicu-485024/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3336579">Adina Voicu</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3336579">Pixabay</a>-->
+                     <h3>Kitten blue</h3>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star"></i>
                      <i class="fa-solid fa-star-half-stroke"></i>
                      <i class="fa-regular fa-star"></i>
-                     <p>Phasellus quis dolor lorem. Nulla facilisi. Vivamus nunc augue, iaculis sit amet turpis vitae, sollicitudin pharetra magna. Proin nisi odio, lobortis nec rhoncus at, vulputate sed ipsum. Morbi turpis mauris, mattis sed orci non, ultrices bibendum urna. Sed non dolor nulla. Donec vel odio dolor. Etiam convallis neque ut lectus suscipit porttitor. Vestibulum quis enim sit amet diam tincidunt blandit. Mauris et imperdiet risus, vitae feugiat mauris. Proin laoreet elit eu odio pretium aliquam. Donec eget nisl fermentum, molestie purus sit amet, lacinia augue. Nulla eget elit tincidunt, imperdiet magna sagittis, congue libero. Duis aliquet mattis mauris.</p>
+                     <p>Phasellus quis dolor lorem. Nulla facilisi. Vivamus nunc augue, iaculis sit amet turpis vitae, sollicitudin pharetra magna. Proin nisi odio, lobortis nec rhoncus at, vulputate sed ipsum. Morbi turpis mauris, mattis sed orci non, ultrices bibendum urna. Sed non dolor nulla. Donec vel odio dolor. Etiam convallis neque ut lectus suscipit porttitor. Vestibulum quis enim sit amet diam tincidunt blandit. Mauris et imperdiet risus, vitae feugiat mauris. Proin laoreet elit eu odio pretium aliquam.</p>
                  </article>
               </div>
              </section>
          </main>
          <footer>
-            <div id="column">
              <section>
                  <h1>LOGO</h1>
                  <p>Vestibulum rutrum mauris aliquam, aliquet magna at, volutpat leo. Nullam lobortis vehicula ullamcorper.</p>
              </section>
-             </div>
+            <div id="footer-container">
              <section id="kontakt">
                  <h3>KONTAKT</h3>
-                 <ul>
-                     <li>
-                         <p>Adresse: B R A Veien 4, 1757 Halden</p>
-                     </li>
-                     <li>
-                         <p>Telefon: 69 60 80 00</p>
-                     </li>
-                     <li>
-                         <p>E-post: halden@hiof.no</p>
-                     </li>
-                     <li>
-                         <p>Åpningstider: Stenger 15:00</p>
-                     </li>
-                 </ul>
+                        <p><i class="fa-solid fa-location-dot"></i><strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+                        <p><i class="fa-solid fa-phone"></i><strong>Telefon:</strong> 69 60 80 00</p>
+                        <p><i class="fa-solid fa-envelope"></i><strong>E-post:</strong> halden@hiof.no</p>
+                        <p><i class="fa-solid fa-clock"></i><strong>Åpningstider:</strong> Stenger 15:00</p>
              </section>
              <section id="snarveier">
                  <h3>SNARVEIER</h3>
@@ -292,6 +293,5 @@
                     <a href="https://www.linkedin.com/" target="_blank" class="fa-brands fa-linkedin"></a>
              </section>
          </footer>
-        </div>
     </body>
 </html>
