@@ -5,40 +5,73 @@
 #container{
     display: grid;
     justify-content: center;
+    align-items: center;
     max-width: 1200px;
+    max-height: 900px;
     gap: 1rem;
-    grid-template-areas: "item3 item2 item1"
-                          "item5 item4 item4";
+    grid-template-areas: "item1 item2 item3"
+                          "item4 item4 item3"
+                          "item4 item4 item5";
+     img{
+     border-radius: 10px;
+    }
 }
 #item-1{
     position: relative;
     grid-area: item1;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    h3{
+        margin: 0;
+        padding: 0;
+        img{
+            height: 300px;
+            max-height: 300px;
+            width: 400px;
+            max-width: 400px;
+        }
+    }
 }
 #item-2{
     position: relative;
     grid-area: item2;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    img{
+        height: 300px;
+        max-height: 300px;
+        width: 400px;
+        max-width: 400px;
+    }
 }
 #item-3{
     position: relative;
     grid-area: item3;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    img{
+        height: 600px;
+        max-height: 600px;
+        width: 400px;
+        max-width: 400px;
+    }
 }
 #item-4{
     position: relative;
     grid-area: item4;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 #item-5{
     position: relative;
     grid-area: item5;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 .overlay{
     width: 100%;
@@ -48,12 +81,6 @@
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: beige;
-}
-#container img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
 }
 #Kategorier{
     h2{

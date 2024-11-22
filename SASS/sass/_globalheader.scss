@@ -13,11 +13,14 @@
     gap: 1rem;
     margin: 0;
     li{
-        a{
+        #logo-meny{
+            text-decoration: none;
+            color: black;
+            }
+        .meny{
             text-decoration: none;
             color: black;
             &:hover{
-                color: $hover;
                 text-decoration: underline;
             }
         }
@@ -34,8 +37,7 @@
             text-decoration: none;
             color: black;
             &:hover{
-                color: $hover;
-                text-decoration: underline;
+                font-size: x-large;
             }
         }
     }

@@ -13,12 +13,15 @@
   gap: 1rem;
   margin: 0;
 }
-.flex-menu li a {
+.flex-menu li #logo-meny {
   text-decoration: none;
   color: black;
 }
-.flex-menu li a:hover {
-  color: rgb(0, 119, 255);
+.flex-menu li .meny {
+  text-decoration: none;
+  color: black;
+}
+.flex-menu li .meny:hover {
   text-decoration: underline;
 }
 
@@ -34,8 +37,7 @@
   color: black;
 }
 .flex-menu-2 li a:hover {
-  color: rgb(0, 119, 255);
-  text-decoration: underline;
+  font-size: x-large;
 }
 
 .flex-search {
@@ -106,6 +108,11 @@ ul.breadcrumb li + li::before {
   color: white;
 }
 
+.btn-group .btn-p:hover {
+  background-color: rgb(75, 75, 75);
+  color: white;
+}
+
 * {
   box-sizing: border-box;
   max-width: 1200px;
@@ -114,9 +121,14 @@ ul.breadcrumb li + li::before {
 #container {
   display: grid;
   justify-content: center;
+  align-items: center;
   max-width: 1200px;
+  max-height: 900px;
   gap: 1rem;
-  grid-template-areas: "item3 item2 item1" "item5 item4 item4";
+  grid-template-areas: "item1 item2 item3" "item4 item4 item3" "item4 item4 item5";
+}
+#container img {
+  border-radius: 10px;
 }
 
 #item-1 {
@@ -124,6 +136,17 @@ ul.breadcrumb li + li::before {
   grid-area: item1;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+#item-1 h3 {
+  margin: 0;
+  padding: 0;
+}
+#item-1 h3 img {
+  height: 300px;
+  max-height: 300px;
+  width: 400px;
+  max-width: 400px;
 }
 
 #item-2 {
@@ -131,6 +154,13 @@ ul.breadcrumb li + li::before {
   grid-area: item2;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+#item-2 img {
+  height: 300px;
+  max-height: 300px;
+  width: 400px;
+  max-width: 400px;
 }
 
 #item-3 {
@@ -138,6 +168,13 @@ ul.breadcrumb li + li::before {
   grid-area: item3;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+#item-3 img {
+  height: 600px;
+  max-height: 600px;
+  width: 400px;
+  max-width: 400px;
 }
 
 #item-4 {
@@ -145,6 +182,7 @@ ul.breadcrumb li + li::before {
   grid-area: item4;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 #item-5 {
@@ -152,6 +190,7 @@ ul.breadcrumb li + li::before {
   grid-area: item5;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .overlay {
@@ -162,13 +201,6 @@ ul.breadcrumb li + li::before {
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: beige;
-}
-
-#container img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
 }
 
 #Kategorier h2 {
@@ -189,15 +221,14 @@ footer {
   justify-content: space-between;
 }
 
-#kontakt #Adresse {
-  display: inline-block;
-}
-#kontakt #Telefon {
-  display: inline-block;
+#kontakt i {
+  margin-right: 10px;
 }
 
 #snarveier ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 #snarveier ul a {
   text-decoration: none;
@@ -205,11 +236,11 @@ footer {
 }
 
 #sosiale-medier a {
+  display: inline;
   text-decoration: none;
   color: black;
-}
-#sosiale-medier i {
-  font-size: medium;
+  font-size: large;
+  margin: 0.4rem;
 }
 
 #flex-container {
@@ -253,40 +284,47 @@ footer {
 }
 
 #Anmeldelser {
-  border-bottom: 1px solid rgb(168, 168, 168);
-  padding: 0 0 40px 0;
+  padding: 20px 0 45px 0;
+  border-bottom: 1px solid rgb(164, 164, 164);
   text-align: start;
-  display: inline-block;
-  width: 100%;
+  max-height: 700px;
+  overflow-y: auto;
 }
 #Anmeldelser img {
   border-radius: 100%;
   height: 90px;
   width: 90px;
 }
-#Anmeldelser article {
-  max-width: 275px;
+
+#anmeldelser-content {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+#anmeldelser-content article {
   display: inline-block;
-  white-space: wrap;
+  min-width: 340px;
+  min-height: 450px;
   padding: 10px;
   border-radius: 10px;
-  margin: 7px;
+  margin: 10px auto;
   border: 1px solid rgb(148, 148, 148);
 }
-#Anmeldelser article h3 {
+#anmeldelser-content article h3 {
   margin: 0;
   padding: 0;
 }
 
 #banner {
-  position: relative;
-  height: 1000px;
-  width: 1000px;
-  margin: 30px auto;
-  padding: 0;
   display: flex;
+  position: relative;
+  height: 500px;
+  width: 1000px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 30px auto;
   gap: 1rem;
-  text-align: center;
 }
 #banner img {
   width: 100%;
@@ -297,17 +335,24 @@ footer {
   margin: 0;
   padding: 0;
 }
-
-#arrows {
-  position: sticky;
-  top: 50%;
-  z-index: 1000;
-  padding-bottom: 200px;
+#banner #first-img {
+  position: absolute;
 }
-#arrows i {
-  padding: 10px;
-  border-radius: 100%;
+#banner #arrows {
+  position: sticky;
+  left: 10px;
+  white-space: nowrap;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+}
+#banner #arrows i {
   background-color: rgba(206, 205, 205, 0.6);
+  padding: 15px;
+  font-size: large;
+  border-radius: 100%;
+  margin-right: 875px;
 }
 
 #head-banner {
@@ -318,6 +363,28 @@ footer {
   padding: 0;
   text-align: right;
   left: 450px;
+  z-index: 70;
+}
+
+#ingress-banner {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 220px;
+  left: 450px;
+  z-index: 70;
+}
+
+#tagg {
+  position: absolute;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  top: 300px;
+  left: 850px;
+  z-index: 70;
 }
 
 #head-banner-2 {
@@ -330,24 +397,6 @@ footer {
   top: 60px;
 }
 
-#head-banner-3 {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  text-align: start;
-  color: white;
-  top: 60px;
-  left: 2150px;
-}
-
-#ingress-banner {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  top: 220px;
-  left: 450px;
-}
-
 #ingress-banner-2 {
   position: absolute;
   width: 50%;
@@ -356,27 +405,6 @@ footer {
   color: white;
   top: 220px;
   left: 1100px;
-}
-
-#ingress-banner-3 {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  text-align: start;
-  color: white;
-  top: 220px;
-  left: 2150px;
-}
-
-#tagg {
-  position: absolute;
-  padding: 10px;
-  background-color: white;
-  border-radius: 10px;
-  text-decoration: none;
-  color: black;
-  top: 300px;
-  left: 850px;
 }
 
 #tagg-2 {
@@ -391,6 +419,26 @@ footer {
   width: 8%;
 }
 
+#head-banner-3 {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  text-align: start;
+  color: white;
+  top: 60px;
+  left: 2150px;
+}
+
+#ingress-banner-3 {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  text-align: start;
+  color: white;
+  top: 220px;
+  left: 2150px;
+}
+
 #tagg-3 {
   position: absolute;
   padding: 10px;
@@ -403,7 +451,7 @@ footer {
   width: 8%;
 }
 
-s * {
+* {
   box-sizing: border-box;
   max-width: 1200px;
 }
@@ -427,7 +475,7 @@ h3 {
 }
 
 h4 {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
 p, a {

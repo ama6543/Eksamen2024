@@ -7,7 +7,7 @@
 @use 'layoutgrid.scss';
 @use 'footer.scss';
 @use 'layoutflex.scss';
-@use 'banner.scss';s
+@use 'banner.scss';
 *{
     box-sizing: border-box;
     max-width: 1200px;
@@ -20,7 +20,7 @@ html{
 h1{font-size: 1.2rem;}
 h2{font-size: 1.1rem;}
 h3{font-size: 0.9rem;}
-h4{font-size: 0.9rem;}
+h4{font-size: 0.7rem;}
 p, a{font-size: 0.5rem;}
 i{font-size: 0.6rem;}
 body{
