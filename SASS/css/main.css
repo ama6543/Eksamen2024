@@ -1,8 +1,8 @@
+@charset "UTF-8";
 #globale-header {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 100%;
 }
 
 .flex-menu {
@@ -76,6 +76,8 @@ body {
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
+  text-align: start;
+  margin: 30px 0 0 0;
 }
 ul.breadcrumb li {
   display: inline;
@@ -87,12 +89,6 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
   color: rgb(0, 119, 255);
   text-decoration: underline;
-}
-
-ul.breadcrumb li + li::before {
-  padding: 1em;
-  content: ">";
-  color: black;
 }
 
 .btn-group button {
@@ -123,12 +119,18 @@ ul.breadcrumb li + li::before {
   justify-content: center;
   align-items: center;
   max-width: 1200px;
-  max-height: 900px;
+  max-height: 1060px;
+  height: 1060px;
   gap: 1rem;
   grid-template-areas: "item1 item2 item3" "item4 item4 item3" "item4 item4 item5";
 }
 #container img {
   border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  filter: blur(1%);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #item-1 {
@@ -136,17 +138,14 @@ ul.breadcrumb li + li::before {
   grid-area: item1;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  height: 350px;
+  max-height: 350px;
+  width: 379px;
+  max-width: 379px;
 }
 #item-1 h3 {
   margin: 0;
   padding: 0;
-}
-#item-1 h3 img {
-  height: 300px;
-  max-height: 300px;
-  width: 400px;
-  max-width: 400px;
 }
 
 #item-2 {
@@ -154,13 +153,14 @@ ul.breadcrumb li + li::before {
   grid-area: item2;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  height: 350px;
+  max-height: 350px;
+  width: 379px;
+  max-width: 379px;
 }
-#item-2 img {
-  height: 300px;
-  max-height: 300px;
-  width: 400px;
-  max-width: 400px;
+#item-2 h3 {
+  margin: 0;
+  padding: 0;
 }
 
 #item-3 {
@@ -168,13 +168,13 @@ ul.breadcrumb li + li::before {
   grid-area: item3;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  height: 700px;
+  max-height: 700px;
+  width: 379px;
 }
-#item-3 img {
-  height: 600px;
-  max-height: 600px;
-  width: 400px;
-  max-width: 400px;
+#item-3 h3 {
+  margin: 0;
+  padding: 0;
 }
 
 #item-4 {
@@ -182,7 +182,14 @@ ul.breadcrumb li + li::before {
   grid-area: item4;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  height: 700px;
+  max-height: 700px;
+  width: 788px;
+  max-width: 788px;
+}
+#item-4 h3 {
+  margin: 0;
+  padding: 0;
 }
 
 #item-5 {
@@ -190,7 +197,13 @@ ul.breadcrumb li + li::before {
   grid-area: item5;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  width: 379px;
+  height: 350px;
+  max-height: 350px;
+}
+#item-5 h3 {
+  margin: 0;
+  padding: 0;
 }
 
 .overlay {
@@ -212,8 +225,46 @@ ul.breadcrumb li + li::before {
   justify-content: center;
 }
 
+#pic-product {
+  display: grid;
+  justify-content: start;
+  margin: 0 15px;
+  width: 60%;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  row-gap: 20px;
+  grid-template-areas: "small big big" "small2 big big" "small3 big big";
+}
+
+#small {
+  grid-area: small;
+  width: 150px;
+  height: 200px;
+}
+
+#small-2 {
+  grid-area: small2;
+  width: 150px;
+  height: 200px;
+}
+
+#small-3 {
+  grid-area: small3;
+  width: 150px;
+  height: 200px;
+}
+
+#big {
+  grid-area: big;
+  width: 550px;
+  height: 640px;
+}
+
 footer {
   text-align: start;
+  margin: 0 auto;
+  width: 1195px;
+  height: 400px;
 }
 
 #footer-container {
@@ -234,6 +285,9 @@ footer {
   text-decoration: none;
   color: black;
 }
+#snarveier ul a:hover {
+  text-decoration: underline;
+}
 
 #sosiale-medier a {
   display: inline;
@@ -241,6 +295,9 @@ footer {
   color: black;
   font-size: large;
   margin: 0.4rem;
+}
+#sosiale-medier a:hover {
+  font-size: x-large;
 }
 
 #flex-container {
@@ -259,6 +316,27 @@ footer {
   margin: 15px;
 }
 
+.flex-article {
+  position: relative;
+}
+.flex-article .produkt-pris {
+  position: absolute;
+  right: 10px;
+  bottom: 8.5%;
+}
+.flex-article .fa-heart {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 10px;
+  background-color: rgba(206, 205, 205, 0.5);
+  border-radius: 100%;
+  color: white;
+}
+.flex-article .fa-heart:hover {
+  background-color: rgba(251, 56, 56, 0.5);
+}
+
 #product-card {
   display: flex;
   flex-direction: row;
@@ -266,21 +344,26 @@ footer {
   justify-content: center;
   gap: 1rem;
   position: relative;
+  max-width: 1200px;
 }
 #product-card img {
-  max-width: 300px;
-  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 379px;
   max-height: 350px;
   border-radius: 10px;
 }
-#product-card .produkt-pris {
-  display: flex;
-  justify-content: flex-end;
-  align-self: flex-end;
+#product-card a {
+  text-decoration: none;
+  color: black;
 }
-#product-card h4 {
+#product-card a h4 {
+  text-align: start;
   margin: 0;
   padding: 0;
+}
+#product-card p {
+  text-align: start;
 }
 
 #Anmeldelser {
@@ -289,6 +372,8 @@ footer {
   text-align: start;
   max-height: 700px;
   overflow-y: auto;
+  max-width: 1195px;
+  margin: 0 auto;
 }
 #Anmeldelser img {
   border-radius: 100%;
@@ -304,7 +389,7 @@ footer {
 }
 #anmeldelser-content article {
   display: inline-block;
-  min-width: 340px;
+  min-width: 320px;
   min-height: 450px;
   padding: 10px;
   border-radius: 10px;
@@ -316,14 +401,101 @@ footer {
   padding: 0;
 }
 
+/*Lignende produkter område*/
+#lingnende-produkter {
+  text-align: start;
+}
+
+#flex-container2 {
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+}
+#flex-container2 img {
+  width: 379px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+#flex-container2 a {
+  text-decoration: none;
+  color: black;
+}
+#flex-container2 h3 {
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-article2 {
+  position: relative;
+}
+.flex-article2 .produkt-pris {
+  position: absolute;
+  right: 10px;
+  bottom: 10%;
+}
+.flex-article2 .fa-heart {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 10px;
+  background-color: rgba(206, 205, 205, 0.5);
+  border-radius: 100%;
+  color: white;
+}
+.flex-article2 .fa-heart:hover {
+  background-color: rgba(251, 56, 56, 0.5);
+}
+
+/*hovedområde på produkt.html side*/
+#main-produkt {
+  position: relative;
+}
+
+#produkt-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#select {
+  display: flex;
+  text-align: start;
+  bottom: 60%;
+  left: 63%;
+  flex-direction: column;
+  margin: 10px;
+  position: absolute;
+  gap: 10px;
+}
+#select #legg-i input {
+  padding: 16px;
+  width: 290px;
+  color: white;
+  background-color: black;
+}
+#select #størrelse {
+  padding: 10px;
+  width: 350px;
+}
+#select i {
+  position: absolute;
+  padding: 15px;
+  border: 1px solid black;
+  width: 50px;
+  left: 300px;
+  bottom: 0;
+}
+
 #banner {
   display: flex;
   position: relative;
   height: 500px;
-  width: 1000px;
+  width: 1195px;
   overflow-x: auto;
   overflow-y: hidden;
-  margin: 30px auto;
+  margin: 50px auto;
   gap: 1rem;
 }
 #banner img {
@@ -352,17 +524,18 @@ footer {
   padding: 15px;
   font-size: large;
   border-radius: 100%;
-  margin-right: 875px;
+  margin-right: 1030px;
+  margin-left: 15px;
 }
 
 #head-banner {
   position: absolute;
   width: 50%;
   height: 100%;
-  top: 60px;
+  top: 100px;
   padding: 0;
   text-align: right;
-  left: 450px;
+  left: 550px;
   z-index: 70;
 }
 
@@ -371,7 +544,7 @@ footer {
   width: 50%;
   height: 100%;
   top: 220px;
-  left: 450px;
+  left: 550px;
   z-index: 70;
 }
 
@@ -383,7 +556,7 @@ footer {
   text-decoration: none;
   color: black;
   top: 300px;
-  left: 850px;
+  left: 1060px;
   z-index: 70;
 }
 
@@ -393,8 +566,8 @@ footer {
   height: 100%;
   text-align: start;
   color: white;
-  left: 1100px;
-  top: 60px;
+  left: 1270px;
+  top: 100px;
 }
 
 #ingress-banner-2 {
@@ -404,7 +577,7 @@ footer {
   text-align: start;
   color: white;
   top: 220px;
-  left: 1100px;
+  left: 1270px;
 }
 
 #tagg-2 {
@@ -414,7 +587,7 @@ footer {
   border-radius: 10px;
   text-decoration: none;
   color: white;
-  left: 1100px;
+  left: 1270px;
   top: 300px;
   width: 8%;
 }
@@ -425,8 +598,8 @@ footer {
   height: 100%;
   text-align: start;
   color: white;
-  top: 60px;
-  left: 2150px;
+  top: 100px;
+  left: 2300px;
 }
 
 #ingress-banner-3 {
@@ -436,7 +609,7 @@ footer {
   text-align: start;
   color: white;
   top: 220px;
-  left: 2150px;
+  left: 2300px;
 }
 
 #tagg-3 {
@@ -446,7 +619,7 @@ footer {
   border-radius: 10px;
   text-decoration: none;
   color: white;
-  left: 2150px;
+  left: 2300px;
   top: 300px;
   width: 8%;
 }

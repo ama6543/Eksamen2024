@@ -1,6 +1,9 @@
 @use 'colors.scss' as *;
 footer{
     text-align: start;
+    margin: 0 auto;
+    width: 1195px;
+    height: 400px;
 }
 #footer-container{
     display: flex;
@@ -19,6 +22,9 @@ footer{
     a{
         text-decoration: none;
         color: black;
+        &:hover{
+            text-decoration: underline;
+        }
     }
   }
 }
@@ -29,5 +35,8 @@ footer{
         color: black;
         font-size: large;
         margin: 0.4rem;
+        &:hover{
+            font-size: x-large;
+        }
     }
 }

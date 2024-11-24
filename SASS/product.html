@@ -11,124 +11,188 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <div id="grid-container">
-         <header id="global-header">
-            <nav class="header-nav">
-              <form class="flex-search">
-                  <label>
-                      <input type="search" placeholder="Søk her">
-                      <i class="fa-solid fa-magnifying-glass" title="search"></i>
-                  </label>
-              </form>
-                 <ul class="flex-menu">
-                     <li>
-                          <a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#index.html">Hjem</a>
-                     </li>
-                     <li>
-                          <a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#Produkter">Produkter</a>
-                     </li>
-                     <li>
-                         <a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#index.html"><span>LOGO</span></a>
-                     </li>
-                     <li>
-                        <a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#Katergorier">Kategorier</a>
-                     </li>
-                     <li>
-                         <a href="#Kontakt">Kontakt oss</a>
-                     </li>
-                 </ul>
-                 <ul class="flex-menu-2">
-                    <li>
-                        <a href="#" class="fa-regular fa-heart"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="fa-regular fa-user"></a>
-                    </li>
-                    <li>
-                        <a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/checkout.html#" class="fa-solid fa-cart-shopping"></a>
-                    </li>
-                 </ul>
-             </nav>
-         </header>
+            <header id="global-header">
+                <nav class="header-nav">
+                  <form class="flex-search">
+                      <label>
+                          <input type="search" placeholder="Søk her">
+                          <i class="fa-solid fa-magnifying-glass" title="search"></i>
+                      </label>
+                  </form>
+                     <ul class="flex-menu">
+                         <li>
+                              <a class="meny" href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#index.html">Hjem</a>
+                         </li>
+                         <li>
+                              <a class="meny" href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#flex-container">Produkter</a>
+                         </li>
+                         <li>
+                             <a id="logo-meny" href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#index.html"><span>LOGO</span></a>
+                         </li>
+                         <li>
+                            <a class="meny" href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#Kategorier">Kategorier</a>
+                         </li>
+                         <li>
+                             <a class="meny" href="#kontakt">Kontakt oss</a>
+                         </li>
+                     </ul>
+                     <ul class="flex-menu-2">
+                        <li>
+                            <a href="#" class="fa-regular fa-heart"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa-regular fa-user"></a>
+                        </li>
+                        <li>
+                            <a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/checkout.html#" class="fa-solid fa-cart-shopping"></a>
+                        </li>
+                     </ul>
+                 </nav>
+             </header>
          <section>
             <ul class="breadcrumb">
                 <li><a href=file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#index.html>Hjem</a></li>
+                <i class="fa-solid fa-chevron-right"></i>
                 <li><a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#Katergorier">Kategori</a></li>
+                <i class="fa-solid fa-chevron-right"></i>
                 <li><a href="#">Produktnavn</a></li>
             </ul>
         </section>
-         <main>
-            <picture>
-             <!--Image by <a href="https://pixabay.com/users/pedroml-1724523/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8557635">Pedro ml</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8557635">Pixabay</a>-->
-              <img src="bilder/T-skjorte_640.jpg" alt="en hvit t-skjorte">
-            </picture>
+         <main id="main-produkt">
+            <div id="pic-product">
+               <!--Image by <a href="https://pixabay.com/users/pedroml-1724523/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8557635">Pedro ml</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8557635">Pixabay</a>-->
+              <img id="big" src="bilder/T-skjorte_640.jpg" alt="en hvit t-skjorte">
+              <img id="small" src="bilder/T-skjorte_640.jpg" alt="en hvit t-skjorte">
+              <img id="small-2" src="bilder/T-skjorte_640.jpg" alt="en hvit t-skjorte">
+              <img id="small-3" src="bilder/T-skjorte_640.jpg" alt="en hvit t-skjorte">
+            </div>
+            <section>
+            <div id="produkt-info">
             <h3>Produktnavn</h3>
             <a href="#">MERKENAVN</a>
             <p>599 kr inkl. mva</p>
-            <p>Farge: hvit</p>
-            <label>
-               <select name="velg størrelse" required>
-                   <option value="" disabled selected hidden>Velg størrelse</option>
-                   <option value="36">36</option>
-                   <option value="37">37</option>
-                   <option value="38">38</option>
-                   <option value="39">39</option>
-                   <option value="40">40</option>
-               </select>
-            </label>
-            <label>
-                <input type="submit" value="Legg i handlekurven">
-                <i class="fa-regular fa-heart"></i>
-            </label>
+            <p>Farge:<strong> hvit</strong></p>
+            </div>
+            <div id="select">
+              <label>
+                 <select id="størrelse" name="velg størrelse" required>
+                    <option value="" disabled selected hidden>Velg størrelse</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                </select>
+             </label>
+             <label id="legg-i">
+                 <input type="submit" value="Legg i handlekurven">
+             </label>
+             <i class="fa-regular fa-heart"></i>
+           </div>
+         </section>
          </main>
-         <aside>
+         <aside id="lingnende-produkter">
+                <h3>Finn lignende produkter</h3>
+                <div id="flex-container2">
+                  <article class="flex-article2">
+                   <i class="fa-regular fa-heart"></i>
+                    <picture>
+                        <source media="(max-width: 800px)" srcset="bilder/oil_1280.jpg">
+                        <!-- Image by <a href="https://pixabay.com/users/vilkasss-35420724/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8759674">Vilius Kukanauskas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8759674">Pixabay</a>-->
+                        <img src="bilder/oil_640.jpg" alt="En olje">
+                    </picture>
+                    <a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/product.html"><h4>Produkt navn</h4></a>
+                    <p class="produkt-pris">kr 799</p>
+                    <p><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i> 842 Reviews</p>
+                  </article>
+                  <article class="flex-article2">
+                   <i class="fa-regular fa-heart"></i>
+                    <picture>
+                       <source media="(max-width: 800px)" srcset="bilder/oil_1280.jpg">
+                       <!-- Image by <a href="https://pixabay.com/users/vilkasss-35420724/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8759674">Vilius Kukanauskas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8759674">Pixabay</a>-->
+                       <img src="bilder/oil_640.jpg" alt="En olje">
+                    </picture>
+                    <a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/product.html"><h4>Produkt navn</h4></a>
+                    <p class="produkt-pris">kr 799</p>
+                    <p><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i> 842 Reviews</p>
+                  </article>
+                  <article class="flex-article2">
+                   <i class="fa-regular fa-heart"></i>
+                        <picture>
+                            <source media="(max-width: 800px)" srcset="bilder/oil_1280.jpg">
+                            <!-- Image by <a href="https://pixabay.com/users/vilkasss-35420724/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8759674">Vilius Kukanauskas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8759674">Pixabay</a>-->
+                            <img src="bilder/oil_640.jpg" alt="En olje">
+                         </picture>
+                    <a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/product.html"><h4>Produkt navn</h4></a>
+                    <p class="produkt-pris">kr 799</p>
+                    <p><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i> 842 Reviews</p>
+                  </article>
+                  <article class="flex-article2">
+                   <i class="fa-regular fa-heart"></i>
+                    <picture>
+                        <source media="(max-width: 800px)" srcset="bilder/oil_1280.jpg">
+                        <!-- Image by <a href="https://pixabay.com/users/vilkasss-35420724/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8759674">Vilius Kukanauskas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8759674">Pixabay</a>-->
+                        <img src="bilder/oil_640.jpg" alt="En olje">
+                    </picture>
+                    <a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/product.html"><h4>Produkt navn</h4></a>
+                    <p class="produkt-pris">kr 799</p>
+                    <p><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i> 842 Reviews</p>
+                </article>
+              </div>
          </aside>
-         <footer>
-            <section id="logo-ingress">
+         <footer id="informasjon">
+            <section>
                 <h1>LOGO</h1>
                 <p>Vestibulum rutrum mauris aliquam, aliquet magna at, volutpat leo. Nullam lobortis vehicula ullamcorper.</p>
             </section>
-            <section id="Kontakt">
-                <h3>KONTAKT</h3>
-                <ol>
-                    <li>
-                        <span class="adress">Adresse: B R A Veien 4, 1757 Halden</span>
-                    </li>
-                    <li>
-                        <span class="phone">Telefon: 69 60 80 00</span>
-                    </li>
-                    <li>
-                        <span class="email">E-post: halden@hiof.no</span>
-                    </li>
-                    <li>
-                        <span class="open-hours">Åpningstider: Stenger 15:00</span>
-                    </li>
-                </ol>
+           <div id="footer-container">
+            <section id="kontakt">
+                <h4>KONTAKT</h4>
+                       <p><i class="fa-solid fa-location-dot"></i><strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+                       <p><i class="fa-solid fa-phone"></i><strong>Telefon:</strong> 69 60 80 00</p>
+                       <p><i class="fa-solid fa-envelope"></i><strong>E-post:</strong> halden@hiof.no</p>
+                       <p><i class="fa-solid fa-clock"></i><strong>Åpningstider:</strong> Stenger 15:00</p>
             </section>
             <section id="snarveier">
-                <h3>SNARVEIER</h3>
+                <h4>SNARVEIER</h4>
                 <nav>
                   <ul>
                      <li>
-                         <a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#Produkter">Produkter</a>
+                         <a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#flex-container">Produkter</a>
                      </li>
                      <li>
-                         <a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#Katergorier">Kategorier</a>
+                         <a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#Kategorier">Kategorier</a>
                      </li>
                      <li>
-                         <a href="#Kontakt">Kontakt oss</a>
+                         <a href="#kontakt">Kontakt oss</a>
                      </li>
                   </ul>
                 </nav>  
             </section>
             <section id="sosiale-medier">
-                <h3>SOSIALE MEDIER</h3>
+                <h4>SOSIALE MEDIER</h4>
                    <a href="https://www.facebook.com/" target="_blank" class="fa-brands fa-facebook"></a>
                    <a href="https://www.instagram.com/" target="_blank" class="fa-brands fa-instagram"></a>
                    <a href="https://www.pinterest.com/" target="_blank" class="fa-brands fa-pinterest"></a>
                    <a href="https://www.linkedin.com/" target="_blank" class="fa-brands fa-linkedin"></a>
             </section>
+           </div> 
         </footer>
-       </div>
    </body>
 </html>
