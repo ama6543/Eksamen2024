@@ -49,50 +49,52 @@
                      </ul>
                  </nav>
              </header>
-         <section>
-            <ul class="breadcrumb">
-                <li><a href=file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#index.html>Hjem</a></li>
-                <i class="fa-solid fa-chevron-right"></i>
-                <li><a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#Katergorier">Kategori</a></li>
-                <i class="fa-solid fa-chevron-right"></i>
-                <li><a href="#">Produktnavn</a></li>
-            </ul>
-        </section>
-         <main id="main-produkt">
-            <div id="pic-product">
-               <!--Image by <a href="https://pixabay.com/users/pedroml-1724523/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8557635">Pedro ml</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8557635">Pixabay</a>-->
-              <img id="big" src="bilder/T-skjorte_640.jpg" alt="en hvit t-skjorte">
-              <img id="small" src="bilder/T-skjorte_640.jpg" alt="en hvit t-skjorte">
-              <img id="small-2" src="bilder/T-skjorte_640.jpg" alt="en hvit t-skjorte">
-              <img id="small-3" src="bilder/T-skjorte_640.jpg" alt="en hvit t-skjorte">
+             <div>
+              <ul class="breadcrumb">
+                  <li><a href=file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#index.html>Hjem</a></li>
+                  <li><i class="fa-solid fa-chevron-right"></i></li>
+                  <li><a href="file:///C:/Users/amand/OneDrive/Dokumenter/WEBUTVIKLING2024/Eksamen2024/SASS/index.html#Katergorier">Kategori</a></li>
+                  <li><i class="fa-solid fa-chevron-right"></i></li>
+                  <li><a href="#">Produktnavn</a></li>
+              </ul>
             </div>
-            <section>
-            <div id="produkt-info">
-            <h3>Produktnavn</h3>
-            <a href="#">MERKENAVN</a>
-            <p>599 kr inkl. mva</p>
-            <p>Farge:<strong> hvit</strong></p>
+            <main id="main-produkt">
+               <div id="innhold-produkt">
+                 <!--Image by <a href="https://pixabay.com/users/pedroml-1724523/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8557635">Pedro ml</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8557635">Pixabay</a>-->
+                 <img id="big" src="bilder/T-skjorte_640.jpg" alt="en hvit t-skjorte">
+                <img id="small" src="bilder/T-skjorte_640.jpg" alt="en hvit t-skjorte">
+                <img id="small-2" src="bilder/T-skjorte_640.jpg" alt="en hvit t-skjorte">
+                <img id="small-3" src="bilder/T-skjorte_640.jpg" alt="en hvit t-skjorte">
+                <div id="produkt-info">
+                <h3>Produktnavn</h3>
+                <a href="#">MERKENAVN</a>
+                <p>599 kr inkl. mva</p>
+                <p>Farge:<strong> hvit</strong></p>
+                <label>
+                  <select id="størrelse" name="velg størrelse" required>
+                     <option value="" disabled selected hidden>Velg størrelse</option>
+                     <option value="36">36</option>
+                     <option value="37">37</option>
+                     <option value="38">38</option>
+                     <option value="39">39</option>
+                     <option value="40">40</option>
+                   </select>
+                </label>
+                <label id="legg-i">
+                   <input type="submit" value="Legg i handlekurven">
+                </label>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div id="panel">
+                <input type="checkbox" name="accordion" id="section1" class="accordion__input"><input>
+                <label for=section1>Materiale og Vedlikehold</label>
+                <p class="accordion-content">ppppp</p>
             </div>
-            <div id="select">
-              <label>
-                 <select id="størrelse" name="velg størrelse" required>
-                    <option value="" disabled selected hidden>Velg størrelse</option>
-                    <option value="36">36</option>
-                    <option value="37">37</option>
-                    <option value="38">38</option>
-                    <option value="39">39</option>
-                    <option value="40">40</option>
-                </select>
-             </label>
-             <label id="legg-i">
-                 <input type="submit" value="Legg i handlekurven">
-             </label>
-             <i class="fa-regular fa-heart"></i>
            </div>
-         </section>
          </main>
          <aside id="lingnende-produkter">
                 <h3>Finn lignende produkter</h3>
+                <a id="sflp" href="#">Se flere lignende produkter <i class="fa-solid fa-arrow-right"></i></a>
                 <div id="flex-container2">
                   <article class="flex-article2">
                    <i class="fa-regular fa-heart"></i>

@@ -108,34 +108,37 @@
         justify-content: center;
     }
 }
-#pic-product{
+/*hovedområde på produkt.html side*/
+#main-produkt{
+    position: relative;
+}
+#innhold-produkt{
     display: grid;
-    justify-content: start;
-    margin: 0 15px;
-    width: 60%;
-    column-gap: 1rem;
-    row-gap: 20px;
-    grid-template-areas: "small big big"
-                          "small2 big big"
-                          "small3 big big";
+    grid-template-areas: "small1 big big produkt-info"
+                         "small2 big big panel"
+                         "small3 big big panel" ;
 }
 #small{
-    grid-area: small;
-    width: 150px;
-    height: 200px;
+    grid-area: small1;
+    width: 379px;
+    height: 250px;
 }
 #small-2{
     grid-area: small2;
-    width: 150px;
-    height: 200px;
+    width: 379px;
+    height: 250px;
 }
 #small-3{
     grid-area: small3;
-    width: 150px;
-    height: 200px;
+    width: 379px;
+    height: 250px;
 }
 #big{
     grid-area: big;
-    width: 550px;
-    height: 640px;
+}
+#produkt-info{
+    grid-area: produkt-info;
+}
+#panel{
+    grid-area: panel;
 }

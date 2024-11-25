@@ -1,6 +1,9 @@
+@use 'colors.scss' as *;
 #flex-container{
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
     h2{
         text-align: center;
     }
@@ -43,9 +46,11 @@
     max-width: 1200px;
     img{
         object-fit: cover;
-        width: 379px;
+        width: 373px;
         max-height: 350px;
         border-radius: 10px;
+        margin: 0;
+        padding: 0;
     }
     a{
         text-decoration: none;
@@ -98,13 +103,21 @@
 /*Lignende produkter område*/
 #lingnende-produkter{
     text-align: start;
+    h3{
+        display: inline-block;
+    }
+    #sflp{
+        display: inline-block;
+        text-decoration: none;
+        padding-left: 450px;
+    }
 }
 #flex-container2{
     display: flex;
     gap: 1rem;
     overflow-x: scroll;
     img{
-        width: 379px;
+        width: 373px;
         height: 350px;
         object-fit: cover;
         border-radius: 10px;
@@ -139,41 +152,4 @@ position: relative;
         }
     }
 }
-/*hovedområde på produkt.html side*/
-#main-produkt{
-    position: relative;
-}
-#produkt-info{
-    display: flex;
-    flex-direction: column;
-}
-#select{
-    display: flex;
-    text-align: start;
-    bottom: 60%;
-    left: 63%;
-    flex-direction: column;
-    margin: 10px;
-    position: absolute;
-    gap: 10px;
-    #legg-i{
-        input{
-            padding: 16px;
-            width: 290px;
-            color: white;
-            background-color: black;
-        }
-    }
-    #størrelse{
-        padding: 10px;
-        width: 350px;
-    }
-    i{
-        position: absolute;
-        padding: 15px;
-        border: 1px solid black;
-        width: 50px;
-        left: 300px;
-        bottom: 0;
-    }
-}
+

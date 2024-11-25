@@ -91,6 +91,11 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
+#panel {
+  height: 0;
+  overflow: hidden;
+}
+
 .btn-group button {
   border-radius: 1rem;
   padding: 1em;
@@ -225,45 +230,50 @@ ul.breadcrumb li a:hover {
   justify-content: center;
 }
 
-#pic-product {
+/*hovedområde på produkt.html side*/
+#main-produkt {
+  position: relative;
+}
+
+#innhold-produkt {
   display: grid;
-  justify-content: start;
-  margin: 0 15px;
-  width: 60%;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
-  row-gap: 20px;
-  grid-template-areas: "small big big" "small2 big big" "small3 big big";
+  grid-template-areas: "small1 big big produkt-info" "small2 big big panel" "small3 big big panel";
 }
 
 #small {
-  grid-area: small;
-  width: 150px;
-  height: 200px;
+  grid-area: small1;
+  width: 379px;
+  height: 250px;
 }
 
 #small-2 {
   grid-area: small2;
-  width: 150px;
-  height: 200px;
+  width: 379px;
+  height: 250px;
 }
 
 #small-3 {
   grid-area: small3;
-  width: 150px;
-  height: 200px;
+  width: 379px;
+  height: 250px;
 }
 
 #big {
   grid-area: big;
-  width: 550px;
-  height: 640px;
+}
+
+#produkt-info {
+  grid-area: produkt-info;
+}
+
+#panel {
+  grid-area: panel;
 }
 
 footer {
   text-align: start;
   margin: 0 auto;
-  width: 1195px;
+  width: 1190px;
   height: 400px;
 }
 
@@ -303,6 +313,8 @@ footer {
 #flex-container {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 #flex-container h2 {
   text-align: center;
@@ -349,9 +361,11 @@ footer {
 #product-card img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 379px;
+  width: 373px;
   max-height: 350px;
   border-radius: 10px;
+  margin: 0;
+  padding: 0;
 }
 #product-card a {
   text-decoration: none;
@@ -405,6 +419,14 @@ footer {
 #lingnende-produkter {
   text-align: start;
 }
+#lingnende-produkter h3 {
+  display: inline-block;
+}
+#lingnende-produkter #sflp {
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 450px;
+}
 
 #flex-container2 {
   display: flex;
@@ -412,7 +434,7 @@ footer {
   overflow-x: scroll;
 }
 #flex-container2 img {
-  width: 379px;
+  width: 373px;
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -447,45 +469,6 @@ footer {
 }
 .flex-article2 .fa-heart:hover {
   background-color: rgba(251, 56, 56, 0.5);
-}
-
-/*hovedområde på produkt.html side*/
-#main-produkt {
-  position: relative;
-}
-
-#produkt-info {
-  display: flex;
-  flex-direction: column;
-}
-
-#select {
-  display: flex;
-  text-align: start;
-  bottom: 60%;
-  left: 63%;
-  flex-direction: column;
-  margin: 10px;
-  position: absolute;
-  gap: 10px;
-}
-#select #legg-i input {
-  padding: 16px;
-  width: 290px;
-  color: white;
-  background-color: black;
-}
-#select #størrelse {
-  padding: 10px;
-  width: 350px;
-}
-#select i {
-  position: absolute;
-  padding: 15px;
-  border: 1px solid black;
-  width: 50px;
-  left: 300px;
-  bottom: 0;
 }
 
 #banner {
@@ -657,9 +640,4 @@ p, a {
 
 i {
   font-size: 0.6rem;
-}
-
-body {
-  display: grid;
-  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
