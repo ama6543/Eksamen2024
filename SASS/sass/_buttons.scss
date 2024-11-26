@@ -14,3 +14,12 @@
     background-color: $grey;
     color: white;
 }
+.accordion__input:checked ~ .accordion-content{
+    display: block;
+}
+.accordion-content{
+    display: none;
+}
+.accordion__input{
+    display: none;
+}

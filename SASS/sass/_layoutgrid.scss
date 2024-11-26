@@ -1,3 +1,4 @@
+@use 'colors.scss' as *;
 *{
     box-sizing: border-box;
     max-width: 1200px;
@@ -111,34 +112,105 @@
 /*hovedområde på produkt.html side*/
 #main-produkt{
     position: relative;
-}
-#innhold-produkt{
     display: grid;
-    grid-template-areas: "small1 big big produkt-info"
-                         "small2 big big panel"
-                         "small3 big big panel" ;
+    text-align: start;
+    gap: 10px;
+    grid-template-areas: "small1 big big produkt-info produkt-info"
+                         "small2 big big panel panel"
+                         "small3 big big panel panel" ;
 }
-#small{
+#small-1{
     grid-area: small1;
-    width: 379px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
 }
 #small-2{
     grid-area: small2;
-    width: 379px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
 }
 #small-3{
     grid-area: small3;
-    width: 379px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
 }
 #big{
     grid-area: big;
+    width: 580px;
+    height: 800px;
 }
 #produkt-info{
+    text-align: start;
     grid-area: produkt-info;
+    .fa-heart{
+        position: absolute;
+        padding: 14px;
+        border: 1px solid black;
+        right: 6px;
+        top: 25.9%;
+        &:hover{
+            color: $heart;
+        }
+    }
+    h3{
+        margin: 0;
+    }
+    label{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        #størrelse{
+            padding: 10px;
+            width: 340px;
+            &:hover{
+                border: 2px solid black;
+            }
+        }
+    }
 }
-#panel{
+#legg-i{
+    input{
+        background-color: black;
+        color: white;
+        padding: 15px;
+        width: 290px;
+        &:hover{
+            background-color: $grey;
+        }
+    }
+}
+#panele{
     grid-area: panel;
+    font-size: medium;
+    .ad-label{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+        cursor: pointer;
+        position: relative;
+        #rate{
+            position: absolute;
+            right: 20px;
+            margin: 0;
+            i{
+                font-size: small;
+            }
+        }
+    }
+    .tre{
+        border-bottom: 1px solid $grey;
+    }
+    .accordion_label{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+        border-top: 1px solid $grey;
+        cursor: pointer;
+        position: relative;
+        i{
+            font-size: medium;
+            position: absolute;
+            right: 20px;
+        }
+    }
 }

@@ -114,6 +114,18 @@ ul.breadcrumb li a:hover {
   color: white;
 }
 
+.accordion__input:checked ~ .accordion-content {
+  display: block;
+}
+
+.accordion-content {
+  display: none;
+}
+
+.accordion__input {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
   max-width: 1200px;
@@ -233,41 +245,110 @@ ul.breadcrumb li a:hover {
 /*hovedområde på produkt.html side*/
 #main-produkt {
   position: relative;
-}
-
-#innhold-produkt {
   display: grid;
-  grid-template-areas: "small1 big big produkt-info" "small2 big big panel" "small3 big big panel";
+  text-align: start;
+  gap: 10px;
+  grid-template-areas: "small1 big big produkt-info produkt-info" "small2 big big panel panel" "small3 big big panel panel";
 }
 
-#small {
+#small-1 {
   grid-area: small1;
-  width: 379px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
 }
 
 #small-2 {
   grid-area: small2;
-  width: 379px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
 }
 
 #small-3 {
   grid-area: small3;
-  width: 379px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
 }
 
 #big {
   grid-area: big;
+  width: 580px;
+  height: 800px;
 }
 
 #produkt-info {
+  text-align: start;
   grid-area: produkt-info;
 }
+#produkt-info .fa-heart {
+  position: absolute;
+  padding: 14px;
+  border: 1px solid black;
+  right: 6px;
+  top: 25.9%;
+}
+#produkt-info .fa-heart:hover {
+  color: rgba(251, 56, 56, 0.5);
+}
+#produkt-info h3 {
+  margin: 0;
+}
+#produkt-info label {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+#produkt-info label #størrelse {
+  padding: 10px;
+  width: 340px;
+}
+#produkt-info label #størrelse:hover {
+  border: 2px solid black;
+}
 
-#panel {
+#legg-i input {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  width: 290px;
+}
+#legg-i input:hover {
+  background-color: rgb(75, 75, 75);
+}
+
+#panele {
   grid-area: panel;
+  font-size: medium;
+}
+#panele .ad-label {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  cursor: pointer;
+  position: relative;
+}
+#panele .ad-label #rate {
+  position: absolute;
+  right: 20px;
+  margin: 0;
+}
+#panele .ad-label #rate i {
+  font-size: small;
+}
+#panele .tre {
+  border-bottom: 1px solid rgb(75, 75, 75);
+}
+#panele .accordion_label {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  border-top: 1px solid rgb(75, 75, 75);
+  cursor: pointer;
+  position: relative;
+}
+#panele .accordion_label i {
+  font-size: medium;
+  position: absolute;
+  right: 20px;
 }
 
 footer {
