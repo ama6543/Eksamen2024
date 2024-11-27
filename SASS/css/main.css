@@ -452,6 +452,26 @@ ul.breadcrumb li a:hover {
     font-size: x-large;
   }
 }
+@media only screen and (max-width: 600px) {
+  footer {
+    text-align: start;
+    margin: 0 auto;
+  }
+  #sosiale-medier h3 {
+    margin: 0;
+  }
+  #sosiale-medier a {
+    display: inline;
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    margin: 0.4rem;
+  }
+  #sosiale-medier a:hover {
+    font-size: x-large;
+    margin: 1px;
+  }
+}
 #flex-container {
   display: flex;
   flex-direction: column;
