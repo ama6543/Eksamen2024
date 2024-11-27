@@ -113,79 +113,43 @@
 #main-produkt{
     position: relative;
     display: grid;
-    text-align: start;
     gap: 10px;
+    max-width: 1195px;
+    max-height: 800px;
+    overflow: scroll;
     grid-template-areas: "small1 big big produkt-info produkt-info"
-                         "small2 big big panel panel"
-                         "small3 big big panel panel" ;
+                         "small2 big big produkt-info produkt-info"
+                         "small3 big big produkt-info produkt-info"
+                         ". . . produkt-info produkt-info" ;
 }
 #small-1{
     grid-area: small1;
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
 }
 #small-2{
     grid-area: small2;
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
 }
 #small-3{
     grid-area: small3;
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
 }
 #big{
     grid-area: big;
-    width: 580px;
-    height: 800px;
+    width: 500px;
+    min-height: 770px;
 }
 #produkt-info{
     text-align: start;
     grid-area: produkt-info;
-    .fa-heart{
-        position: absolute;
-        padding: 14px;
-        border: 1px solid black;
-        right: 6px;
-        top: 25.9%;
-        &:hover{
-            color: $heart;
-        }
-    }
-    h3{
-        margin: 0;
-    }
-    label{
-        display: flex;
-        flex-direction: column;
-        margin: 10px 0;
-        #størrelse{
-            padding: 10px;
-            width: 340px;
-            &:hover{
-                border: 2px solid black;
-            }
-        }
-    }
-}
-#legg-i{
-    input{
-        background-color: black;
-        color: white;
-        padding: 15px;
-        width: 290px;
-        &:hover{
-            background-color: $grey;
-        }
-    }
-}
-#panele{
-    grid-area: panel;
     font-size: medium;
     .ad-label{
         display: flex;
         flex-direction: column;
-        padding: 30px 0;
+        padding: 40px 0 ;
         cursor: pointer;
         position: relative;
         #rate{
@@ -197,20 +161,57 @@
             }
         }
     }
+    h3{
+        margin: 20px 0 10px 0;
+    }
     .tre{
         border-bottom: 1px solid $grey;
     }
     .accordion_label{
         display: flex;
         flex-direction: column;
-        padding: 30px 0;
+        padding: 40px 0 ;
         border-top: 1px solid $grey;
         cursor: pointer;
         position: relative;
         i{
-            font-size: medium;
+            font-size: small;
             position: absolute;
             right: 20px;
+        }
+    }
+    .fa-heart{
+        position: absolute;
+        padding: 14px;
+        border: 1px solid black;
+        right: 3px;
+        top: 235px;
+        &:hover{
+            color: $heart;
+        }
+    }
+    label{
+        display: flex;
+        flex-direction: column;
+        #størrelse{
+            margin: 20px 0 0 0;
+            padding: 10px;
+            width: 410px;
+            &:hover{
+                border: 2px solid black;
+            }
+        }
+    }
+}
+#legg-i{
+    input{
+        background-color: black;
+        color: white;
+        padding: 15px;
+        width: 350px;
+        margin: 10px 0 40px 0;
+        &:hover{
+            background-color: $grey;
         }
     }
 }

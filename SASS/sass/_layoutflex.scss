@@ -109,7 +109,7 @@
     #sflp{
         display: inline-block;
         text-decoration: none;
-        padding-left: 450px;
+        padding-left: 630px;
     }
 }
 #flex-container2{
@@ -152,4 +152,16 @@ position: relative;
         }
     }
 }
-
+/*Checkout område*/
+#checkout-1{
+    text-align: start;
+    img{
+        max-width: 350px;
+    }
+    p{
+        text-align: end;
+    }
+    h4{
+        text-align: end;
+    }
+}

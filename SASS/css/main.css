@@ -116,6 +116,7 @@ ul.breadcrumb li a:hover {
 
 .accordion__input:checked ~ .accordion-content {
   display: block;
+  margin: 30px 0 0 0;
 }
 
 .accordion-content {
@@ -123,6 +124,28 @@ ul.breadcrumb li a:hover {
 }
 
 .accordion__input {
+  display: none;
+}
+
+.accordion__input:checked ~ .accordion-content2 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid rgb(75, 75, 75);
+  border-radius: 10px;
+  width: 360px;
+  margin: 25px 1em 0 1em;
+}
+.accordion__input:checked ~ .accordion-content2 p {
+  text-align: start;
+  margin: 0;
+  padding: 5px 0;
+}
+.accordion__input:checked ~ .accordion-content2 .fa-star {
+  font-size: medium;
+}
+
+.accordion-content2 {
   display: none;
 }
 
@@ -246,60 +269,94 @@ ul.breadcrumb li a:hover {
 #main-produkt {
   position: relative;
   display: grid;
-  text-align: start;
   gap: 10px;
-  grid-template-areas: "small1 big big produkt-info produkt-info" "small2 big big panel panel" "small3 big big panel panel";
+  max-width: 1195px;
+  max-height: 800px;
+  overflow: scroll;
+  grid-template-areas: "small1 big big produkt-info produkt-info" "small2 big big produkt-info produkt-info" "small3 big big produkt-info produkt-info" ". . . produkt-info produkt-info";
 }
 
 #small-1 {
   grid-area: small1;
-  width: 280px;
-  height: 280px;
+  width: 250px;
+  height: 250px;
 }
 
 #small-2 {
   grid-area: small2;
-  width: 280px;
-  height: 280px;
+  width: 250px;
+  height: 250px;
 }
 
 #small-3 {
   grid-area: small3;
-  width: 280px;
-  height: 280px;
+  width: 250px;
+  height: 250px;
 }
 
 #big {
   grid-area: big;
-  width: 580px;
-  height: 800px;
+  width: 500px;
+  min-height: 770px;
 }
 
 #produkt-info {
   text-align: start;
   grid-area: produkt-info;
+  font-size: medium;
+}
+#produkt-info .ad-label {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+  cursor: pointer;
+  position: relative;
+}
+#produkt-info .ad-label #rate {
+  position: absolute;
+  right: 20px;
+  margin: 0;
+}
+#produkt-info .ad-label #rate i {
+  font-size: small;
+}
+#produkt-info h3 {
+  margin: 20px 0 10px 0;
+}
+#produkt-info .tre {
+  border-bottom: 1px solid rgb(75, 75, 75);
+}
+#produkt-info .accordion_label {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+  border-top: 1px solid rgb(75, 75, 75);
+  cursor: pointer;
+  position: relative;
+}
+#produkt-info .accordion_label i {
+  font-size: small;
+  position: absolute;
+  right: 20px;
 }
 #produkt-info .fa-heart {
   position: absolute;
   padding: 14px;
   border: 1px solid black;
-  right: 6px;
-  top: 25.9%;
+  right: 3px;
+  top: 235px;
 }
 #produkt-info .fa-heart:hover {
   color: rgba(251, 56, 56, 0.5);
 }
-#produkt-info h3 {
-  margin: 0;
-}
 #produkt-info label {
   display: flex;
   flex-direction: column;
-  margin: 10px 0;
 }
 #produkt-info label #størrelse {
+  margin: 20px 0 0 0;
   padding: 10px;
-  width: 340px;
+  width: 410px;
 }
 #produkt-info label #størrelse:hover {
   border: 2px solid black;
@@ -309,46 +366,11 @@ ul.breadcrumb li a:hover {
   background-color: black;
   color: white;
   padding: 15px;
-  width: 290px;
+  width: 350px;
+  margin: 10px 0 40px 0;
 }
 #legg-i input:hover {
   background-color: rgb(75, 75, 75);
-}
-
-#panele {
-  grid-area: panel;
-  font-size: medium;
-}
-#panele .ad-label {
-  display: flex;
-  flex-direction: column;
-  padding: 30px 0;
-  cursor: pointer;
-  position: relative;
-}
-#panele .ad-label #rate {
-  position: absolute;
-  right: 20px;
-  margin: 0;
-}
-#panele .ad-label #rate i {
-  font-size: small;
-}
-#panele .tre {
-  border-bottom: 1px solid rgb(75, 75, 75);
-}
-#panele .accordion_label {
-  display: flex;
-  flex-direction: column;
-  padding: 30px 0;
-  border-top: 1px solid rgb(75, 75, 75);
-  cursor: pointer;
-  position: relative;
-}
-#panele .accordion_label i {
-  font-size: medium;
-  position: absolute;
-  right: 20px;
 }
 
 footer {
@@ -506,7 +528,7 @@ footer {
 #lingnende-produkter #sflp {
   display: inline-block;
   text-decoration: none;
-  padding-left: 450px;
+  padding-left: 630px;
 }
 
 #flex-container2 {
@@ -550,6 +572,20 @@ footer {
 }
 .flex-article2 .fa-heart:hover {
   background-color: rgba(251, 56, 56, 0.5);
+}
+
+/*Checkout område*/
+#checkout-1 {
+  text-align: start;
+}
+#checkout-1 img {
+  max-width: 350px;
+}
+#checkout-1 p {
+  text-align: end;
+}
+#checkout-1 h4 {
+  text-align: end;
 }
 
 #banner {
@@ -720,5 +756,9 @@ p, a {
 }
 
 i {
+  font-size: 0.6rem;
+}
+
+label {
   font-size: 0.6rem;
 }/*# sourceMappingURL=main.css.map */
