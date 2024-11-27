@@ -344,7 +344,7 @@ ul.breadcrumb li a:hover {
   padding: 14px;
   border: 1px solid black;
   right: 3px;
-  top: 235px;
+  top: 270px;
 }
 #produkt-info .fa-heart:hover {
   color: rgba(251, 56, 56, 0.5);
@@ -373,46 +373,85 @@ ul.breadcrumb li a:hover {
   background-color: rgb(75, 75, 75);
 }
 
-footer {
-  text-align: start;
-  margin: 0 auto;
-  width: 1190px;
-  height: 400px;
+@media only screen and (min-width: 1200px) {
+  footer {
+    text-align: start;
+    margin: 0 auto;
+    width: 1190px;
+    height: 400px;
+  }
+  #footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  #kontakt i {
+    margin-right: 10px;
+  }
+  #snarveier ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #snarveier ul a {
+    text-decoration: none;
+    color: black;
+  }
+  #snarveier ul a:hover {
+    text-decoration: underline;
+  }
+  #sosiale-medier a {
+    display: inline;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    margin: 0.4rem;
+  }
+  #sosiale-medier a:hover {
+    font-size: x-large;
+  }
 }
-
-#footer-container {
-  display: flex;
-  justify-content: space-between;
+@media only screen and (min-width: 600px) {
+  footer {
+    text-align: start;
+    margin: 0 auto;
+  }
+  #footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #kontakt h3 {
+    margin: 0;
+  }
+  #kontakt i {
+    margin-right: 10px;
+  }
+  #snarveier ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #snarveier ul a {
+    text-decoration: none;
+    color: black;
+  }
+  #snarveier ul a:hover {
+    text-decoration: underline;
+  }
+  #sosiale-medier h3 {
+    margin: 0;
+  }
+  #sosiale-medier a {
+    display: inline;
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    margin: 0.4rem;
+  }
+  #sosiale-medier a:hover {
+    font-size: x-large;
+  }
 }
-
-#kontakt i {
-  margin-right: 10px;
-}
-
-#snarveier ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-#snarveier ul a {
-  text-decoration: none;
-  color: black;
-}
-#snarveier ul a:hover {
-  text-decoration: underline;
-}
-
-#sosiale-medier a {
-  display: inline;
-  text-decoration: none;
-  color: black;
-  font-size: large;
-  margin: 0.4rem;
-}
-#sosiale-medier a:hover {
-  font-size: x-large;
-}
-
 #flex-container {
   display: flex;
   flex-direction: column;
@@ -488,7 +527,8 @@ footer {
   border-bottom: 1px solid rgb(164, 164, 164);
   text-align: start;
   max-height: 700px;
-  overflow-y: auto;
+  overflow-y: hidden;
+  overflow-x: auto;
   max-width: 1195px;
   margin: 0 auto;
 }
@@ -507,7 +547,6 @@ footer {
 #anmeldelser-content article {
   display: inline-block;
   min-width: 320px;
-  min-height: 450px;
   padding: 10px;
   border-radius: 10px;
   margin: 10px auto;
@@ -574,20 +613,181 @@ footer {
   background-color: rgba(251, 56, 56, 0.5);
 }
 
-/*Checkout område*/
-#checkout-1 {
+#forsettåhandle {
   text-align: start;
 }
-#checkout-1 img {
-  max-width: 350px;
-}
-#checkout-1 p {
-  text-align: end;
-}
-#checkout-1 h4 {
-  text-align: end;
-}
 
+/*Checkout område*/
+@media only screen and (max-width: 500px) {
+  #checkout.main {
+    display: flex;
+    flex-direction: column;
+  }
+  #forsettåhandle {
+    position: absolute;
+    right: 300px;
+    top: 140px;
+  }
+  h4 {
+    font-size: large;
+    margin: 20px 0 0 40px;
+  }
+  #checkout-1 {
+    margin: 20px 10px;
+    border: 1px solid rgb(75, 75, 75);
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 5px;
+  }
+  #checkout-1 h3 {
+    margin-left: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+  #checkout-1 p {
+    margin: 0 0 0 40px;
+  }
+  #checkout-1 img {
+    margin-left: 20px;
+    max-width: 250px;
+    height: 250px;
+    text-align: center;
+  }
+  #checkout-1 .antall {
+    max-width: 40px;
+    height: 40px;
+    margin-top: 10px;
+  }
+  #checkout-1 label {
+    margin: 0 0 10px 40px;
+  }
+  #checkout-1 #størrelse2 {
+    height: 40px;
+    margin-top: 10px;
+  }
+  #checkout-1 i {
+    font-size: medium;
+    margin: 40px 0 40px 5px;
+  }
+  #checkout-2 {
+    margin: 20px 10px;
+    border: 1px solid rgb(75, 75, 75);
+    padding: 20px;
+  }
+  #checkout-2 h3 {
+    text-align: start;
+    margin: 20px 40px 10px 40px;
+    text-transform: uppercase;
+  }
+  #checkout-2 p {
+    text-align: start;
+    margin: 20px 0 10px 0;
+    font-weight: 800;
+  }
+  #checkout-2 form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  #checkout-2 form button {
+    margin: 20px 0;
+    height: 40px;
+    background-color: rgb(53, 53, 53);
+    color: white;
+  }
+  #checkout-2 label {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-weight: 600;
+  }
+  #checkout-2 label input {
+    height: 35px;
+  }
+  #checkout-3 {
+    margin: 20px 10px;
+    border: 1px solid rgb(75, 75, 75);
+    text-align: start;
+    padding: 20px;
+  }
+  #checkout-3 h3 {
+    margin-left: 40px;
+    text-transform: uppercase;
+  }
+  #checkout-3 #levvalg {
+    margin: 0 0 0 40px;
+    font-weight: 800;
+  }
+  #checkout-3 form {
+    border: 1px solid black;
+    text-align: start;
+    width: 300px;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  #checkout-3 form .dager {
+    color: rgba(128, 128, 128, 0.625);
+    text-align: start;
+  }
+  #checkout-3 form label {
+    font-weight: 600;
+    width: 300px;
+    padding: 0 10px;
+  }
+  #checkout-4 {
+    margin: 20px 10px;
+    border: 1px solid rgb(75, 75, 75);
+    text-align: start;
+    padding: 20px;
+  }
+  #checkout-4 h3 {
+    margin-left: 35px;
+    text-transform: uppercase;
+  }
+  #checkout-4 p {
+    text-align: center;
+    width: 300px;
+    margin-left: 35px;
+  }
+  #checkout-4 .middle {
+    text-align: center;
+  }
+  #checkout-4 #price {
+    font-weight: 800;
+    font-size: large;
+  }
+  #checkout-4 #jatakk {
+    margin-left: 60px;
+  }
+  #checkout-4 #betal {
+    text-align: start;
+    font-weight: 800;
+    margin: 0 0 0 35px;
+  }
+  #checkout-4 button {
+    margin-left: 35px;
+    width: 300px;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    height: 40px;
+  }
+  #checkout-4 form {
+    margin: 0 auto;
+    width: 300px;
+  }
+  #checkout-4 form label {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-weight: 600;
+  }
+  #checkout-4 form label input {
+    height: 35px;
+  }
+}
 #banner {
   display: flex;
   position: relative;
@@ -748,17 +948,17 @@ h3 {
 }
 
 h4 {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 p, a {
-  font-size: 0.5rem;
+  font-size: 0.7rem;
 }
 
 i {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 }
 
 label {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 }/*# sourceMappingURL=main.css.map */

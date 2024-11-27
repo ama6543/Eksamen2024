@@ -1,42 +1,114 @@
 @use 'colors.scss' as *;
-footer{
-    text-align: start;
-    margin: 0 auto;
-    width: 1190px;
-    height: 400px;
-}
-#footer-container{
-    display: flex;
-    justify-content: space-between;
-}
-#kontakt{
-    i{
-        margin-right: 10px;
+@media only screen and (min-width:1200px){
+    footer{
+        text-align: start;
+        margin: 0 auto;
+        width: 1190px;
+        height: 400px;
     }
-}
-#snarveier{
-    ul{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    a{
-        text-decoration: none;
-        color: black;
-        &:hover{
-            text-decoration: underline;
+    #footer-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    #kontakt{
+        i{
+            margin-right: 10px;
         }
     }
-  }
+    #snarveier{
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        a{
+            text-decoration: none;
+            color: black;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+      }
+    }
+    #sosiale-medier{
+        a{
+            display: inline;
+            text-decoration: none;
+            color: black;
+            font-size: large;
+            margin: 0.4rem;
+            &:hover{
+                font-size: x-large;
+            }
+        }
+    }
+    
 }
-#sosiale-medier{
-    a{
-        display: inline;
-        text-decoration: none;
-        color: black;
-        font-size: large;
-        margin: 0.4rem;
-        &:hover{
-            font-size: x-large;
+@media only screen and (min-width: 600px){
+    footer{
+        text-align: start;
+        margin: 0 auto;
+    }
+    #footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #kontakt{
+        h3{
+            margin: 0;
+        }
+        i{
+            margin-right: 10px;
+        }
+    }
+    #snarveier{
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        a{
+            text-decoration: none;
+            color: black;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+      }
+    }
+    #sosiale-medier{
+        h3{
+            margin: 0;
+        }
+        a{
+            display: inline;
+            text-decoration: none;
+            color: black;
+            font-size: medium;
+            margin: 0.4rem;
+            &:hover{
+                font-size: x-large;
+            }
+        }
+    }
+}
+@media only screen and(max-width: 600px){
+    footer{
+        text-align: start;
+        margin: 0 auto;
+    }
+    #sosiale-medier{
+        h3{
+            margin: 0;
+        }
+        a{
+            display: inline;
+            text-decoration: none;
+            color: black;
+            font-size: medium;
+            margin: 0.4rem;
+            &:hover{
+                font-size: x-large;
+            }
         }
     }
 }
