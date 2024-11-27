@@ -91,11 +91,6 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
-#panel {
-  height: 0;
-  overflow: hidden;
-}
-
 .btn-group button {
   border-radius: 1rem;
   padding: 1em;
