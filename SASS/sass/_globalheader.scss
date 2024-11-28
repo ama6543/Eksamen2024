@@ -1,71 +1,142 @@
 @use 'colors.scss' as *;
-#globale-header{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.flex-menu{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    gap: 1rem;
-    margin: 0;
-    li{
-        #logo-meny{
-            text-decoration: none;
-            color: black;
-            }
-        .meny{
-            text-decoration: none;
-            color: black;
-            &:hover{
-                text-decoration: underline;
-            }
-        }
-    }
-}
-.flex-menu-2{
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    gap: 1rem;
-    margin: 0;
-    li{
-        a{
-            text-decoration: none;
-            color: black;
-            &:hover{
-                font-size: x-large;
-            }
-        }
-    }
-}
-.flex-search{
-    display: flex;
-    flex-wrap: wrap;
-    label{
+@media only screen and (min-width:800px){
+    #globale-header{
         display: flex;
-        border: 1px solid rgb(50, 50, 50);
-        padding: 3px;
-        border-radius: 15px;
-        align-items: center;
-        input{
-            border: none;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .flex-menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        gap: 1rem;
+        margin: 0;
+        li{
+            #logo-meny{
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+                }
+            .meny{
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
         }
     }
+    .flex-menu-2{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 1rem;
+        margin: 0;
+        li{
+            a{
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    font-size: x-large;
+                }
+            }
+        }
+    }
+    .flex-search{
+        display: flex;
+        flex-wrap: wrap;
+        label{
+            display: flex;
+            border: 1px solid rgb(50, 50, 50);
+            padding: 3px;
+            border-radius: 15px;
+            align-items: center;
+            input{
+                border: none;
+            }
+        }
+    }
+    .fa-solid.fa-magnifying-glass{
+        font-size: medium;
+    }
+    .header-nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li{
+            span{
+                font-size: xxx-large;
+            }
+        }
+    }
+    
 }
-.fa-solid.fa-magnifying-glass{
-    font-size: medium;
-}
-.header-nav{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    li{
-        span{
-            font-size: xx-large;
+@media only screen and (max-width: 800px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-search{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 350px;
+        label{
+            display: flex;
+            border: 1px solid rgb(50, 50, 50);
+            padding: 9px;
+            border-radius: 15px;
+            input{
+                border: none;
+            }
+        }
+    }
+    .fa-solid.fa-magnifying-glass{
+        font-size: medium;
+    }
+    .flex-menu-2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+        li{
+            a{
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    font-size: x-large;
+                }
+            }
+        }
+    }
+    .flex-menu{
+        text-align: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5rem;
+        li{
+            #logo-meny{
+                text-decoration: none;
+                color: black;
+                line-height: 3rem;
+                font-size: xxx-large;
+                font-weight: 600;
+                }
+            .meny{
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }

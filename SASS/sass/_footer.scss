@@ -11,6 +11,10 @@
         justify-content: space-between;
     }
     #kontakt{
+        h4{
+        margin: 0;
+        padding: 0;
+        }
         i{
             margin-right: 10px;
         }
@@ -47,6 +51,10 @@
     footer{
         text-align: start;
         margin: 0 auto;
+        h4{
+            text-align: start;
+            margin: 0;
+        }
     }
     #footer-container{
         display: flex;
@@ -54,9 +62,6 @@
         justify-content: space-between;
     }
     #kontakt{
-        h3{
-            margin: 0;
-        }
         i{
             margin-right: 10px;
         }
@@ -94,12 +99,34 @@
 @media only screen and (max-width: 600px){
     footer{
         text-align: start;
-        margin: 0 auto;
-    }
-    #sosiale-medier{
-        h3{
+        position: relative;
+        h4{
+            text-align: start;
             margin: 0;
         }
+    }
+    #footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #snarveier{
+        margin: 10px;
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        a{
+            text-decoration: none;
+            color: black;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+      }
+    }
+    #sosiale-medier{
+        margin: 10px;
         a{
             display: inline;
             text-decoration: none;
@@ -108,8 +135,13 @@
             margin: 0.4rem;
             &:hover{
                 font-size: x-large;
-                margin: 1px;
             }
+        }
+    }
+    #kontakt{
+        margin: 10px;
+        i{
+            margin-right: 10px;
         }
     }
 }

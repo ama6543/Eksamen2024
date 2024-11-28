@@ -1,74 +1,134 @@
 @charset "UTF-8";
-#globale-header {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+@media only screen and (min-width: 800px) {
+  #globale-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .flex-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+  }
+  .flex-menu li #logo-meny {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  }
+  .flex-menu li .meny {
+    text-decoration: none;
+    color: black;
+  }
+  .flex-menu li .meny:hover {
+    text-decoration: underline;
+  }
+  .flex-menu-2 {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+  }
+  .flex-menu-2 li a {
+    text-decoration: none;
+    color: black;
+  }
+  .flex-menu-2 li a:hover {
+    font-size: x-large;
+  }
+  .flex-search {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flex-search label {
+    display: flex;
+    border: 1px solid rgb(50, 50, 50);
+    padding: 3px;
+    border-radius: 15px;
+    align-items: center;
+  }
+  .flex-search label input {
+    border: none;
+  }
+  .fa-solid.fa-magnifying-glass {
+    font-size: medium;
+  }
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .header-nav li span {
+    font-size: xxx-large;
+  }
 }
-
-.flex-menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  gap: 1rem;
-  margin: 0;
+@media only screen and (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 350px;
+  }
+  .flex-search label {
+    display: flex;
+    border: 1px solid rgb(50, 50, 50);
+    padding: 9px;
+    border-radius: 15px;
+  }
+  .flex-search label input {
+    border: none;
+  }
+  .fa-solid.fa-magnifying-glass {
+    font-size: medium;
+  }
+  .flex-menu-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  .flex-menu-2 li a {
+    text-decoration: none;
+    color: black;
+  }
+  .flex-menu-2 li a:hover {
+    font-size: x-large;
+  }
+  .flex-menu {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5rem;
+  }
+  .flex-menu li #logo-meny {
+    text-decoration: none;
+    color: black;
+    line-height: 3rem;
+    font-size: xxx-large;
+    font-weight: 600;
+  }
+  .flex-menu li .meny {
+    text-decoration: none;
+    color: black;
+  }
+  .flex-menu li .meny:hover {
+    text-decoration: underline;
+  }
 }
-.flex-menu li #logo-meny {
-  text-decoration: none;
-  color: black;
-}
-.flex-menu li .meny {
-  text-decoration: none;
-  color: black;
-}
-.flex-menu li .meny:hover {
-  text-decoration: underline;
-}
-
-.flex-menu-2 {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  gap: 1rem;
-  margin: 0;
-}
-.flex-menu-2 li a {
-  text-decoration: none;
-  color: black;
-}
-.flex-menu-2 li a:hover {
-  font-size: x-large;
-}
-
-.flex-search {
-  display: flex;
-  flex-wrap: wrap;
-}
-.flex-search label {
-  display: flex;
-  border: 1px solid rgb(50, 50, 50);
-  padding: 3px;
-  border-radius: 15px;
-  align-items: center;
-}
-.flex-search label input {
-  border: none;
-}
-
-.fa-solid.fa-magnifying-glass {
-  font-size: medium;
-}
-
-.header-nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.header-nav li span {
-  font-size: xx-large;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -149,117 +209,306 @@ ul.breadcrumb li a:hover {
   max-width: 1200px;
 }
 
-#container {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  max-height: 1060px;
-  height: 1060px;
-  gap: 1rem;
-  grid-template-areas: "item1 item2 item3" "item4 item4 item3" "item4 item4 item5";
+@media only screen and (min-device-width: 1200px) {
+  #container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    max-height: 1060px;
+    height: 1060px;
+    gap: 1rem;
+    grid-template-areas: "item1 item2 item3" "item4 item4 item3" "item4 item4 item5";
+  }
+  #container img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    filter: blur(1%);
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #item-1 {
+    position: relative;
+    grid-area: item1;
+    margin: 0;
+    padding: 0;
+    height: 350px;
+    max-height: 350px;
+    width: 379px;
+    max-width: 379px;
+  }
+  #item-1 h3 {
+    margin: 0;
+    padding: 0;
+  }
+  #item-2 {
+    position: relative;
+    grid-area: item2;
+    margin: 0;
+    padding: 0;
+    height: 350px;
+    max-height: 350px;
+    width: 379px;
+    max-width: 379px;
+  }
+  #item-2 h3 {
+    margin: 0;
+    padding: 0;
+  }
+  #item-3 {
+    position: relative;
+    grid-area: item3;
+    margin: 0;
+    padding: 0;
+    height: 700px;
+    max-height: 700px;
+    width: 379px;
+  }
+  #item-3 h3 {
+    margin: 0;
+    padding: 0;
+  }
+  #item-4 {
+    position: relative;
+    grid-area: item4;
+    margin: 0;
+    padding: 0;
+    height: 700px;
+    max-height: 700px;
+    width: 788px;
+    max-width: 788px;
+  }
+  #item-4 h3 {
+    margin: 0;
+    padding: 0;
+  }
+  #item-5 {
+    position: relative;
+    grid-area: item5;
+    margin: 0;
+    padding: 0;
+    width: 379px;
+    height: 350px;
+    max-height: 350px;
+  }
+  #item-5 h3 {
+    margin: 0;
+    padding: 0;
+  }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  #Kategorier h2 {
+    display: grid;
+    justify-content: center;
+  }
+  #Kategorier p {
+    display: flex;
+    justify-content: center;
+  }
 }
-#container img {
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-  filter: blur(1%);
-  -o-object-fit: cover;
-     object-fit: cover;
+@media only screen and (max-width: 800px) {
+  #container {
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    gap: 1rem;
+    grid-template-areas: "item1" "item2" "item3" "item3" "item4" "item5";
+  }
+  #container img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #item-1 {
+    position: relative;
+    grid-area: item1;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: 400px;
+  }
+  #item-1 h3 {
+    margin: 0;
+    padding: 0;
+  }
+  #item-2 {
+    position: relative;
+    grid-area: item2;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: 400px;
+  }
+  #item-2 h3 {
+    margin: 0;
+    padding: 0;
+  }
+  #item-3 {
+    position: relative;
+    grid-area: item3;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 400px;
+  }
+  #item-3 h3 {
+    margin: 0;
+    padding: 0;
+  }
+  #item-4 {
+    position: relative;
+    grid-area: item4;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 200px;
+  }
+  #item-4 h3 {
+    margin: 0;
+    padding: 0;
+  }
+  #item-5 {
+    position: relative;
+    grid-area: item5;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 200px;
+  }
+  #item-5 h3 {
+    margin: 0;
+    padding: 0;
+  }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  #Kategorier h2 {
+    display: grid;
+    justify-content: center;
+  }
+  #Kategorier p {
+    display: flex;
+    justify-content: center;
+  }
 }
-
-#item-1 {
-  position: relative;
-  grid-area: item1;
-  margin: 0;
-  padding: 0;
-  height: 350px;
-  max-height: 350px;
-  width: 379px;
-  max-width: 379px;
+@media only screen and (max-device-width: 800px) and (min-device-width: 1100px) {
+  #container {
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    max-width: 1000px;
+    gap: 1rem;
+    grid-template-areas: "item1 item2" "item3 item4" "item3 item5";
+  }
+  #container img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #item-1 {
+    position: relative;
+    grid-area: item1;
+    margin: 0;
+    padding: 0;
+    height: 250px;
+    width: 400px;
+  }
+  #item-1 h3 {
+    margin: 0;
+    padding: 0;
+  }
+  #item-2 {
+    position: relative;
+    grid-area: item2;
+    margin: 0;
+    padding: 0;
+    height: 250px;
+    width: 400px;
+  }
+  #item-2 h3 {
+    margin: 0;
+    padding: 0;
+  }
+  #item-3 {
+    position: relative;
+    grid-area: item3;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 530px;
+  }
+  #item-3 h3 {
+    margin: 0;
+    padding: 0;
+  }
+  #item-4 {
+    position: relative;
+    grid-area: item4;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 250px;
+  }
+  #item-4 h3 {
+    margin: 0;
+    padding: 0;
+  }
+  #item-5 {
+    position: relative;
+    grid-area: item5;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 250px;
+  }
+  #item-5 h3 {
+    margin: 0;
+    padding: 0;
+  }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  #Kategorier h2 {
+    display: grid;
+    justify-content: center;
+  }
+  #Kategorier p {
+    display: flex;
+    justify-content: center;
+  }
 }
-#item-1 h3 {
-  margin: 0;
-  padding: 0;
-}
-
-#item-2 {
-  position: relative;
-  grid-area: item2;
-  margin: 0;
-  padding: 0;
-  height: 350px;
-  max-height: 350px;
-  width: 379px;
-  max-width: 379px;
-}
-#item-2 h3 {
-  margin: 0;
-  padding: 0;
-}
-
-#item-3 {
-  position: relative;
-  grid-area: item3;
-  margin: 0;
-  padding: 0;
-  height: 700px;
-  max-height: 700px;
-  width: 379px;
-}
-#item-3 h3 {
-  margin: 0;
-  padding: 0;
-}
-
-#item-4 {
-  position: relative;
-  grid-area: item4;
-  margin: 0;
-  padding: 0;
-  height: 700px;
-  max-height: 700px;
-  width: 788px;
-  max-width: 788px;
-}
-#item-4 h3 {
-  margin: 0;
-  padding: 0;
-}
-
-#item-5 {
-  position: relative;
-  grid-area: item5;
-  margin: 0;
-  padding: 0;
-  width: 379px;
-  height: 350px;
-  max-height: 350px;
-}
-#item-5 h3 {
-  margin: 0;
-  padding: 0;
-}
-
-.overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-#Kategorier h2 {
-  display: grid;
-  justify-content: center;
-}
-#Kategorier p {
-  display: flex;
-  justify-content: center;
-}
-
 /*hovedområde på produkt.html side*/
 #main-produkt {
   position: relative;
@@ -379,6 +628,10 @@ ul.breadcrumb li a:hover {
     display: flex;
     justify-content: space-between;
   }
+  #kontakt h4 {
+    margin: 0;
+    padding: 0;
+  }
   #kontakt i {
     margin-right: 10px;
   }
@@ -410,13 +663,14 @@ ul.breadcrumb li a:hover {
     text-align: start;
     margin: 0 auto;
   }
+  footer h4 {
+    text-align: start;
+    margin: 0;
+  }
   #footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  #kontakt h3 {
-    margin: 0;
   }
   #kontakt i {
     margin-right: 10px;
@@ -450,10 +704,34 @@ ul.breadcrumb li a:hover {
 @media only screen and (max-width: 600px) {
   footer {
     text-align: start;
-    margin: 0 auto;
+    position: relative;
   }
-  #sosiale-medier h3 {
+  footer h4 {
+    text-align: start;
     margin: 0;
+  }
+  #footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #snarveier {
+    margin: 10px;
+  }
+  #snarveier ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #snarveier ul a {
+    text-decoration: none;
+    color: black;
+  }
+  #snarveier ul a:hover {
+    text-decoration: underline;
+  }
+  #sosiale-medier {
+    margin: 10px;
   }
   #sosiale-medier a {
     display: inline;
@@ -464,79 +742,134 @@ ul.breadcrumb li a:hover {
   }
   #sosiale-medier a:hover {
     font-size: x-large;
-    margin: 1px;
+  }
+  #kontakt {
+    margin: 10px;
+  }
+  #kontakt i {
+    margin-right: 10px;
   }
 }
-#flex-container {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
+@media screen and (max-width: 3000px) {
+  #flex-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  #flex-container h2 {
+    text-align: center;
+  }
+  #flex-container #best {
+    text-align: center;
+  }
+  #flex-container .btn-group {
+    text-align: center;
+    gap: 1em;
+    margin: 15px;
+  }
+  .flex-article {
+    position: relative;
+  }
+  .flex-article .produkt-pris {
+    position: absolute;
+    right: 10px;
+    bottom: 8.5%;
+  }
+  .flex-article .fa-heart {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    background-color: rgba(206, 205, 205, 0.5);
+    border-radius: 100%;
+    color: white;
+  }
+  .flex-article .fa-heart:hover {
+    background-color: rgba(251, 56, 56, 0.5);
+  }
+  #product-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    max-width: 1200px;
+  }
+  #product-card img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 373px;
+    max-height: 350px;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  #product-card a {
+    text-decoration: none;
+    color: black;
+  }
+  #product-card a h4 {
+    text-align: start;
+    margin: 0;
+    padding: 0;
+  }
+  #product-card p {
+    text-align: start;
+  }
 }
-#flex-container h2 {
-  text-align: center;
+@media screen and (max-width: 800px) {
+  #product-card {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+  }
+  #product-card img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 350px;
+    height: 100%;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  #product-card a {
+    text-decoration: none;
+    color: black;
+  }
+  #product-card a h4 {
+    text-align: start;
+    margin: 0;
+    padding: 0;
+  }
+  #product-card p {
+    text-align: start;
+  }
+  .flex-article {
+    position: relative;
+  }
+  .flex-article .produkt-pris {
+    position: absolute;
+    right: 10px;
+    bottom: 8.5%;
+  }
+  .flex-article .fa-heart {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    background-color: rgba(206, 205, 205, 0.5);
+    border-radius: 100%;
+    color: white;
+  }
+  .flex-article .fa-heart:hover {
+    background-color: rgba(251, 56, 56, 0.5);
+  }
 }
-#flex-container #best {
-  text-align: center;
-}
-#flex-container .btn-group {
-  text-align: center;
-  gap: 1em;
-  margin: 15px;
-}
-
-.flex-article {
-  position: relative;
-}
-.flex-article .produkt-pris {
-  position: absolute;
-  right: 10px;
-  bottom: 8.5%;
-}
-.flex-article .fa-heart {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  padding: 10px;
-  background-color: rgba(206, 205, 205, 0.5);
-  border-radius: 100%;
-  color: white;
-}
-.flex-article .fa-heart:hover {
-  background-color: rgba(251, 56, 56, 0.5);
-}
-
-#product-card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  position: relative;
-  max-width: 1200px;
-}
-#product-card img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 373px;
-  max-height: 350px;
-  border-radius: 10px;
-  margin: 0;
-  padding: 0;
-}
-#product-card a {
-  text-decoration: none;
-  color: black;
-}
-#product-card a h4 {
-  text-align: start;
-  margin: 0;
-  padding: 0;
-}
-#product-card p {
-  text-align: start;
-}
-
 #Anmeldelser {
   padding: 20px 0 45px 0;
   border-bottom: 1px solid rgb(164, 164, 164);
@@ -633,22 +966,17 @@ ul.breadcrumb li a:hover {
 }
 
 /*Checkout område*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 900px) {
   #checkout.main {
     display: flex;
     flex-direction: column;
-  }
-  #forsettåhandle {
-    position: absolute;
-    right: 300px;
-    top: 140px;
   }
   h4 {
     font-size: large;
     margin: 20px 0 0 40px;
   }
   #checkout-1 {
-    margin: 20px 10px;
+    margin: 20px 0;
     border: 1px solid rgb(75, 75, 75);
     display: flex;
     flex-direction: column;
@@ -686,18 +1014,20 @@ ul.breadcrumb li a:hover {
     margin: 40px 0 40px 5px;
   }
   #checkout-2 {
-    margin: 20px 10px;
+    margin: 20px 0;
     border: 1px solid rgb(75, 75, 75);
     padding: 20px;
   }
   #checkout-2 h3 {
-    text-align: start;
-    margin: 20px 40px 10px 40px;
+    text-align: center;
+    margin: 4vh 25vh 0 0;
     text-transform: uppercase;
   }
   #checkout-2 p {
+    display: block;
+    width: 300px;
     text-align: start;
-    margin: 20px 0 10px 0;
+    margin: 10px auto;
     font-weight: 800;
   }
   #checkout-2 form {
@@ -722,24 +1052,34 @@ ul.breadcrumb li a:hover {
     height: 35px;
   }
   #checkout-3 {
-    margin: 20px 10px;
+    margin: 20px 0;
     border: 1px solid rgb(75, 75, 75);
     text-align: start;
     padding: 20px;
   }
   #checkout-3 h3 {
-    margin-left: 40px;
+    text-align: center;
+    margin: 4vh 40vh 4vh 0;
     text-transform: uppercase;
   }
   #checkout-3 #levvalg {
-    margin: 0 0 0 40px;
+    display: block;
+    width: 300px;
     font-weight: 800;
+    text-align: start;
+    margin: 0 auto;
   }
   #checkout-3 form {
-    border: 1px solid black;
-    text-align: start;
+    display: block;
+    margin: 0 auto;
     width: 300px;
-    margin: 10px auto;
+  }
+  #checkout-3 form .form1 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 80vh;
+    margin: 10px 0;
     border-radius: 10px;
     padding: 10px;
   }
@@ -748,42 +1088,52 @@ ul.breadcrumb li a:hover {
     text-align: start;
   }
   #checkout-3 form label {
-    font-weight: 600;
+    font-weight: 550;
     width: 300px;
     padding: 0 10px;
   }
   #checkout-4 {
-    margin: 20px 10px;
     border: 1px solid rgb(75, 75, 75);
     text-align: start;
+    display: flex;
     padding: 20px;
+    flex-direction: column;
   }
   #checkout-4 h3 {
-    margin-left: 35px;
+    text-align: center;
+    margin-right: 40vh;
     text-transform: uppercase;
   }
   #checkout-4 p {
+    margin: 2vh auto;
     text-align: center;
     width: 300px;
-    margin-left: 35px;
   }
   #checkout-4 .middle {
-    text-align: center;
+    margin: 2vh auto;
   }
   #checkout-4 #price {
+    margin: 2vh auto;
     font-weight: 800;
     font-size: large;
   }
   #checkout-4 #jatakk {
-    margin-left: 60px;
+    margin: auto;
+    width: 43.5vh;
+  }
+  #checkout-4 #ønsker {
+    margin: 2vh auto;
+    font-size: 0.7rem;
+    text-align: center;
+    width: 45vh;
   }
   #checkout-4 #betal {
     text-align: start;
+    margin: 0 auto;
     font-weight: 800;
-    margin: 0 0 0 35px;
   }
   #checkout-4 button {
-    margin-left: 35px;
+    margin: auto;
     width: 300px;
     background-color: rgb(53, 53, 53);
     color: white;
@@ -797,148 +1147,526 @@ ul.breadcrumb li a:hover {
     display: flex;
     flex-direction: column;
     text-align: start;
-    font-weight: 600;
+    font-weight: 550;
   }
   #checkout-4 form label input {
     height: 35px;
   }
 }
-#banner {
-  display: flex;
-  position: relative;
-  height: 500px;
-  width: 1195px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  margin: 50px auto;
-  gap: 1rem;
+@media only screen and (min-width: 900px) {
+  #forsettåhandle {
+    margin: 25px 0;
+    text-decoration: none;
+  }
+  h4 {
+    font-size: large;
+    margin: 20px 0 0 40px;
+  }
+  #checkout-1 {
+    margin: 40px auto;
+    border: 1px solid rgb(75, 75, 75);
+    text-align: center;
+    position: relative;
+    padding: 40px 0;
+  }
+  #checkout-1 h3 {
+    padding: 10px;
+    text-transform: uppercase;
+  }
+  #checkout-1 #shophead {
+    position: absolute;
+    left: 500px;
+    top: 15%;
+  }
+  #checkout-1 #shophead2 {
+    position: absolute;
+    left: 500px;
+    top: 45%;
+  }
+  #checkout-1 #shophead3 {
+    position: absolute;
+    left: 500px;
+    top: 75%;
+  }
+  #checkout-1 #shoppris {
+    position: absolute;
+    left: 500px;
+    top: 215px;
+  }
+  #checkout-1 #shoppris2 {
+    position: absolute;
+    left: 500px;
+    top: 550px;
+  }
+  #checkout-1 #shoppris3 {
+    position: absolute;
+    left: 500px;
+    bottom: 212px;
+  }
+  #checkout-1 #shopfarg {
+    position: absolute;
+    left: 500px;
+    top: 240px;
+  }
+  #checkout-1 #shopfarg2 {
+    position: absolute;
+    left: 500px;
+    top: 575px;
+  }
+  #checkout-1 #shopfarg3 {
+    position: absolute;
+    left: 500px;
+    bottom: 190px;
+  }
+  #checkout-1 #shopselect {
+    position: absolute;
+    left: 500px;
+    top: 280px;
+  }
+  #checkout-1 #shopselect2 {
+    position: absolute;
+    left: 500px;
+    bottom: 450px;
+  }
+  #checkout-1 #shopselect3 {
+    position: absolute;
+    left: 500px;
+    bottom: 120px;
+  }
+  #checkout-1 #icons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 770px;
+    top: 150px;
+  }
+  #checkout-1 #icons .fa-trash {
+    position: absolute;
+    bottom: -30%;
+  }
+  #checkout-1 #icons2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 770px;
+    bottom: 550px;
+  }
+  #checkout-1 #icons2 .fa-trash {
+    position: absolute;
+    bottom: -30%;
+  }
+  #checkout-1 #icons3 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 770px;
+    bottom: 215px;
+  }
+  #checkout-1 #icons3 .fa-trash {
+    position: absolute;
+    bottom: -30%;
+  }
+  #checkout-1 img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0 0 220px;
+    max-width: 300px;
+    height: 300px;
+  }
+  #checkout-1 p {
+    margin: 0 0 0 40px;
+  }
+  #checkout-1 .antall {
+    max-width: 40px;
+    height: 40px;
+    margin-top: 10px;
+  }
+  #checkout-1 label {
+    margin: 0 0 10px 40px;
+  }
+  #checkout-1 #størrelse2 {
+    height: 40px;
+    margin-top: 10px;
+  }
+  #checkout-1 i {
+    font-size: medium;
+    margin: 40px 0 40px 5px;
+  }
+  #checkout-2 {
+    margin: 40px auto;
+    border: 1px solid rgb(75, 75, 75);
+    padding: 40px 0;
+  }
+  #checkout-2 h3 {
+    text-align: center;
+    margin: 20px 40px 10px 40px;
+    text-transform: uppercase;
+  }
+  #checkout-2 p {
+    text-align: start;
+    margin: 20px 0 10px 0;
+    font-weight: 800;
+  }
+  #checkout-2 #contactinfo {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: start;
+  }
+  #checkout-2 #contactinfo a {
+    margin: 0 270px;
+  }
+  #checkout-2 #contactinfo button {
+    width: 600px;
+    height: 50px;
+    margin: 10px 0;
+    background-color: rgb(53, 53, 53);
+    color: white;
+  }
+  #checkout-2 #contactinfo label {
+    display: flex;
+    flex-direction: column;
+    margin: 0.1rem 0;
+  }
+  #checkout-2 #contactinfo label input {
+    width: 600px;
+    height: 35px;
+  }
+  #checkout-2 #textinfo {
+    text-align: start;
+    width: 600px;
+    margin: 20px auto 10px auto;
+  }
+  #checkout-2 #Leveringsadresse {
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    min-width: 600px;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
+    row-gap: 0.1rem;
+    grid-template-areas: "fornavn etternavn" "gateadresse gateadresse" "postnummer poststed";
+  }
+  #checkout-2 #Leveringsadresse #fornavn {
+    grid-area: fornavn;
+  }
+  #checkout-2 #Leveringsadresse #etternavn {
+    grid-area: etternavn;
+  }
+  #checkout-2 #Leveringsadresse #gateadresse {
+    grid-area: gateadresse;
+  }
+  #checkout-2 #Leveringsadresse #postnummer {
+    grid-area: postnummer;
+  }
+  #checkout-2 #Leveringsadresse #poststed {
+    grid-area: poststed;
+  }
+  #checkout-2 #Leveringsadresse label {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+  #checkout-2 #Leveringsadresse input {
+    max-width: 600px;
+    min-width: 294px;
+    height: 35px;
+  }
+  #checkout-3 {
+    margin: 40px auto;
+    border: 1px solid rgb(75, 75, 75);
+    text-align: center;
+    padding: 20px 0;
+  }
+  #checkout-3 h3 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #checkout-3 #levvalg {
+    text-align: start;
+    margin: 0 auto;
+    width: 600px;
+    font-weight: 800;
+  }
+  #checkout-3 form {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+  }
+  #checkout-3 form .form1 {
+    text-align: start;
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px auto;
+  }
+  #checkout-3 form .dager {
+    color: rgba(128, 128, 128, 0.625);
+    text-align: start;
+  }
+  #checkout-3 form label {
+    display: inline;
+    font-weight: 600;
+    width: 300px;
+    padding: 0 10px;
+  }
+  #checkout-4 {
+    margin: 40px auto;
+    border: 1px solid rgb(75, 75, 75);
+    text-align: center;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #checkout-4 h3 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #checkout-4 p {
+    margin: 20px auto;
+    width: 600px;
+  }
+  #checkout-4 .middle {
+    margin: 20px auto;
+  }
+  #checkout-4 #price {
+    font-weight: 800;
+    font-size: xx-large;
+  }
+  #checkout-4 #jatakk {
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+  }
+  #checkout-4 #ønsker {
+    width: 600px;
+    font-size: 0.7rem;
+    margin: 10px auto;
+  }
+  #checkout-4 #betal {
+    font-weight: 800;
+    text-align: start;
+  }
+  #checkout-4 button {
+    margin: 0 auto;
+    width: 600px;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    height: 70px;
+    font-size: large;
+  }
+  #checkout-4 form {
+    margin: 0 auto;
+    width: 600px;
+  }
+  #checkout-4 form label {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-weight: 550;
+    margin: 0.1rem 0;
+  }
+  #checkout-4 form label input {
+    height: 40px;
+  }
 }
-#banner img {
-  width: 100%;
-  height: 100%;
-  height: 500px;
-  min-width: 1000px;
-  border-radius: 20px;
-  margin: 0;
-  padding: 0;
+@media screen and (max-width: 3000px) {
+  #banner {
+    display: flex;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 50px auto;
+    gap: 1rem;
+  }
+  #banner img {
+    width: 100%;
+    height: 100%;
+    height: 500px;
+    min-width: 1000px;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  #banner #first-img {
+    position: absolute;
+  }
+  #banner #arrows {
+    position: sticky;
+    left: 10px;
+    white-space: nowrap;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+  }
+  #banner #arrows i {
+    background-color: rgba(206, 205, 205, 0.6);
+    padding: 15px;
+    font-size: x-large;
+    border-radius: 100%;
+    margin-right: 1015px;
+    margin-left: 15px;
+  }
+  #head-banner {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 100px;
+    padding: 0;
+    text-align: right;
+    left: 550px;
+    z-index: 70;
+  }
+  #ingress-banner {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 220px;
+    left: 550px;
+    z-index: 70;
+    text-align: end;
+  }
+  #tagg {
+    position: absolute;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    top: 355px;
+    left: 1050px;
+    z-index: 70;
+  }
+  #head-banner-2 {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    text-align: start;
+    color: white;
+    left: 1270px;
+    top: 100px;
+  }
+  #ingress-banner-2 {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    text-align: start;
+    color: white;
+    top: 220px;
+    left: 1270px;
+  }
+  #tagg-2 {
+    position: absolute;
+    padding: 10px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    left: 1270px;
+    top: 360px;
+    width: 10%;
+  }
+  #head-banner-3 {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    text-align: start;
+    color: white;
+    top: 100px;
+    left: 2300px;
+  }
+  #ingress-banner-3 {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    text-align: start;
+    color: white;
+    top: 220px;
+    left: 2300px;
+  }
+  #tagg-3 {
+    position: absolute;
+    padding: 10px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    left: 2300px;
+    top: 360px;
+    width: 10%;
+  }
 }
-#banner #first-img {
-  position: absolute;
+@media only screen and (max-width: 1000px) {
+  #banner {
+    position: relative;
+  }
+  #banner #head-banner {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    text-align: right;
+    left: 48%;
+    top: 10%;
+    z-index: 70;
+  }
+  #banner #ingress-banner {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 48%;
+    top: 40%;
+    z-index: 70;
+  }
+  #banner #tagg {
+    position: absolute;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    z-index: 70;
+    width: 17%;
+    left: 80%;
+    top: 70%;
+  }
+  #arrows {
+    display: none;
+  }
+  #first-img {
+    width: 100%;
+    height: 100%;
+  }
+  #third-img {
+    display: none;
+  }
+  #tagg-3 {
+    display: none;
+  }
+  #head-banner-3 {
+    display: none;
+  }
+  #head-banner-2 {
+    display: none;
+  }
+  #ingress-banner-3 {
+    display: none;
+  }
+  #second-img {
+    display: none;
+  }
+  #ingress-banner-2 {
+    display: none;
+  }
+  #tagg-2 {
+    display: none;
+  }
 }
-#banner #arrows {
-  position: sticky;
-  left: 10px;
-  white-space: nowrap;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-  top: 50%;
-}
-#banner #arrows i {
-  background-color: rgba(206, 205, 205, 0.6);
-  padding: 15px;
-  font-size: large;
-  border-radius: 100%;
-  margin-right: 1030px;
-  margin-left: 15px;
-}
-
-#head-banner {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  top: 100px;
-  padding: 0;
-  text-align: right;
-  left: 550px;
-  z-index: 70;
-}
-
-#ingress-banner {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  top: 220px;
-  left: 550px;
-  z-index: 70;
-}
-
-#tagg {
-  position: absolute;
-  padding: 10px;
-  background-color: white;
-  border-radius: 10px;
-  text-decoration: none;
-  color: black;
-  top: 300px;
-  left: 1060px;
-  z-index: 70;
-}
-
-#head-banner-2 {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  text-align: start;
-  color: white;
-  left: 1270px;
-  top: 100px;
-}
-
-#ingress-banner-2 {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  text-align: start;
-  color: white;
-  top: 220px;
-  left: 1270px;
-}
-
-#tagg-2 {
-  position: absolute;
-  padding: 10px;
-  background-color: rgb(50, 50, 50);
-  border-radius: 10px;
-  text-decoration: none;
-  color: white;
-  left: 1270px;
-  top: 300px;
-  width: 8%;
-}
-
-#head-banner-3 {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  text-align: start;
-  color: white;
-  top: 100px;
-  left: 2300px;
-}
-
-#ingress-banner-3 {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  text-align: start;
-  color: white;
-  top: 220px;
-  left: 2300px;
-}
-
-#tagg-3 {
-  position: absolute;
-  padding: 10px;
-  background-color: rgb(50, 50, 50);
-  border-radius: 10px;
-  text-decoration: none;
-  color: white;
-  left: 2300px;
-  top: 300px;
-  width: 8%;
-}
-
 * {
   box-sizing: border-box;
   max-width: 1200px;
