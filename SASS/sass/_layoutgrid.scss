@@ -119,6 +119,7 @@
         align-items: center;
         width: 300px;
         gap: 1rem;
+        min-height: 1400px;
         grid-template-areas:  "item1"
                               "item2"
                               "item3"
@@ -175,6 +176,7 @@
         padding: 0;
         width: 400px;
         height: 200px;
+        max-height: 200px;
         h3{
             margin: 0;
             padding: 0;
@@ -214,252 +216,257 @@
         }
     }
 }
-@media only screen and (max-device-width: 800px) and (min-device-width: 1100px){
-    #container{
-        margin: 0 auto;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        width: 300px;
-        max-width: 1000px;
-        gap: 1rem;
-        grid-template-areas:  "item1 item2"
-                              "item3 item4"
-                              "item3 item5";
-         img{
-         border-radius: 10px;
-         width: 100%;
-         height: 100%;
-         object-fit: cover;
-        }
-    }
-    #item-1{
-        position: relative;
-        grid-area: item1;
-        margin: 0;
-        padding: 0;
-        height: 250px;
-        width: 400px;
-        h3{
-            margin: 0;
-            padding: 0;
-        }
-    }
-    #item-2{
-        position: relative;
-        grid-area: item2;
-        margin: 0;
-        padding: 0;
-        height: 250px;;
-        width: 400px;
-        h3{
-            margin: 0;
-            padding: 0;
-        }
-    }
-    #item-3{
-        position: relative;
-        grid-area: item3;
-        margin: 0;
-        padding: 0;
-        width: 400px;
-        height: 530px;
-        h3{
-            margin: 0;
-            padding: 0;
-        }
-    }
-    #item-4{
-        position: relative;
-        grid-area: item4;
-        margin: 0;
-        padding: 0;
-        width: 400px;
-        height: 250px;
-        h3{
-            margin: 0;
-            padding: 0;
-        }
-    }
-    #item-5{
-        position: relative;
-        grid-area: item5;
-        margin: 0;
-        padding: 0;
-        width: 400px;
-        height: 250px;
-        h3{
-            margin: 0;
-            padding: 0;
-        }
-    }
-    .overlay{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        margin: 0;
-        padding: 0;
-    }
-    #Kategorier{
-        h2{
-            display: grid;
-            justify-content: center;
-        }
-        p{
-            display: flex;
-            justify-content: center;
-        }
-    }
-}
-
-
-@media screen and(min-device-width: 1000px){
 /*hovedområde på produkt.html side*/
-#main-produkt{
-    position: relative;
-    display: grid;
-    gap: 10px;
-    max-width: 1195px;
-    max-height: 800px;
-    overflow: scroll;
-    grid-template-areas: "small1 big big produkt-info produkt-info"
-                         "small2 big big produkt-info produkt-info"
-                         "small3 big big produkt-info produkt-info"
-                         ". . . produkt-info produkt-info" ;
-}
-#small-1{
-    grid-area: small1;
-    width: 250px;
-    height: 250px;
-}
-#small-2{
-    grid-area: small2;
-    width: 250px;
-    height: 250px;
-}
-#small-3{
-    grid-area: small3;
-    width: 250px;
-    height: 250px;
-}
-#big{
-    grid-area: big;
-    width: 500px;
-    min-height: 770px;
-}
-#produkt-info{
-    text-align: start;
-    grid-area: produkt-info;
-    font-size: medium;
-    .ad-label{
-        display: flex;
-        flex-direction: column;
-        padding: 40px 0 ;
-        cursor: pointer;
-        position: relative;
-        #rate{
-            position: absolute;
-            right: 20px;
-            margin: 0;
-            i{
-                font-size: small;
-            }
-        }
-    }
-    h3{
-        margin: 20px 0 10px 0;
-    }
-    .tre{
-        border-bottom: 1px solid $grey;
-    }
-    .accordion_label{
-        display: flex;
-        flex-direction: column;
-        padding: 40px 0 ;
-        border-top: 1px solid $grey;
-        cursor: pointer;
-        position: relative;
-        i{
-            font-size: small;
-            position: absolute;
-            right: 20px;
-        }
-    }
-    .fa-heart{
-        position: absolute;
-        padding: 14px;
-        border: 1px solid black;
-        right: 3px;
-        top: 270px;
-        &:hover{
-            color: $heart;
-        }
-    }
-    label{
-        display: flex;
-        flex-direction: column;
-        #størrelse{
-            margin: 20px 0 0 0;
-            padding: 10px;
-            width: 410px;
-            &:hover{
-                border: 2px solid black;
-            }
-        }
-    }
-}
-#legg-i{
-    input{
-        background-color: black;
-        color: white;
-        padding: 15px;
-        width: 350px;
-        margin: 10px 0 40px 0;
-        &:hover{
-            background-color: $grey;
-        }
-    }
-}
-}
-@media only screen and (max-width: 800px){
+@media only screen and (min-width: 800px){
     #main-produkt{
-        position: static;
+        position: relative;
         display: grid;
         gap: 10px;
-        max-width: 400px;
-        height: 1000px;
-        overflow-y: auto;
-        grid-template-areas: "small1 big big"
-                             "small2 big big"
-                             "small3 big big"
-                             "produkt-info produkt-info
-                             produkt-info produkt-info" ;
+        max-width: 1195px;
+        max-height: 800px;
+        overflow: scroll;
+        grid-template-areas: "small1 big big produkt-info produkt-info"
+                             "small2 big big produkt-info produkt-info"
+                             "small3 big big produkt-info produkt-info"
+                             ". . . produkt-info produkt-info" ;
+    }
+    #legg-i{
+        input{
+            background-color: black;
+            color: white;
+            padding: 15px;
+            width: 350px;
+            margin: 10px 0 40px 0;
+            &:hover{
+                background-color: $grey;
+            }
+        }
     }
     #small-1{
         grid-area: small1;
+        width: 250px;
+        height: 250px;
     }
     #small-2{
         grid-area: small2;
-        width: 50px;
-        height: 50px;
+        width: 250px;
+        height: 250px;
     }
     #small-3{
         grid-area: small3;
-        width: 50px;
-        height: 50px;
+        width: 250px;
+        height: 250px;
     }
     #big{
         grid-area: big;
-        width: 200px;
-        height: 200px;
+        width: 500px;
+        min-height: 770px;
     }
     #produkt-info{
         text-align: start;
         grid-area: produkt-info;
         font-size: medium;
+        .ad-label{
+            display: flex;
+            flex-direction: column;
+            padding: 40px 0;
+            cursor: pointer;
+            position: relative;
+            .fa-star{
+                display: inline;
+            }
+            #rate{
+                position: absolute;
+                left: 280px;
+                margin: 0;
+                i{
+                    font-size: small;
+                }
+            }
+            #rate2{
+                position: absolute;
+                left: 300px;
+                margin: 0;
+                i{
+                    font-size: small;
+                }
+            }
+            #rate3{
+                position: absolute;
+                left: 323px;
+                margin: 0;
+                i{
+                    font-size: small;
+                }
+            }
+            #rate4{
+                position: absolute;
+                left: 345px;
+                margin: 0;
+                i{
+                    font-size: small;
+                }
+            }
+            #rate5{
+                position: absolute;
+                right: 20px;
+                margin: 0;
+                i{
+                    font-size: small;
+                }
+            }
+        }
+        h3{
+            margin: 20px 0 10px 0;
+        }
+        .tre{
+            border-bottom: 1px solid $grey;
+        }
+        .accordion_label{
+            display: flex;
+            flex-direction: column;
+            padding: 40px 0 ;
+            border-top: 1px solid $grey;
+            cursor: pointer;
+            position: relative;
+            i{
+                font-size: small;
+                position: absolute;
+                right: 20px;
+            }
+        }
+        .fa-heart{
+            position: absolute;
+            padding: 14px;
+            border: 1px solid black;
+            right: 3px;
+            top: 270px;
+            &:hover{
+                color: $heart;
+            }
+        }
+        label{
+            display: flex;
+            flex-direction: column;
+            #størrelse{
+                margin: 20px 0 0 0;
+                padding: 10px;
+                width: 410px;
+                &:hover{
+                    border: 2px solid black;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px){
+    #main-produkt{
+        position: relative;
+        display: grid;
+        gap: 10px;
+        max-width: 410px;
+        height: 1100px;
+        overflow-y: auto;
+        margin: 0 auto;
+        grid-template-areas: "small1 big big"
+                             "small2 big big"
+                             "small3 big big"
+                             "produkt-info produkt-info produkt-info"
+                             "produkt-info produkt-info produkt-info" 
+                             "produkt-info produkt-info produkt-info";
+    }
+    #legg-i{
+        input{
+            background-color: black;
+            color: white;
+            padding: 15px;
+            width: 350px;
+            margin: 10px 0 40px 0;
+            &:hover{
+                background-color: $grey;
+            }
+        }
+    }
+    #small-1{
+        grid-area: small1;
+        width: 100px;
+        height: 100px;
+    }
+    #small-2{
+        grid-area: small2;
+        width: 100px;
+        height: 100px;
+    }
+    #small-3{
+        grid-area: small3;
+        width: 100px;
+        height: 100px;
+    }
+    #big{
+        grid-area: big;
+        width: 300px;
+        height: 358px;
+    }
+    #produkt-info{
+        text-align: start;
+        grid-area: produkt-info;
+        font-size: medium;
+        .ad-label{
+            display: flex;
+            flex-direction: column;
+            padding: 40px 0 ;
+            cursor: pointer;
+            position: relative;
+            #rate{
+                position: absolute;
+                right: 20px;
+                margin: 0;
+                i{
+                    font-size: small;
+                }
+            }
+        }
+        h3{
+            margin: 20px 0 10px 0;
+        }
+        .tre{
+            border-bottom: 1px solid $grey;
+        }
+        .accordion_label{
+            display: flex;
+            flex-direction: column;
+            padding: 40px 0 ;
+            border-top: 1px solid $grey;
+            cursor: pointer;
+            position: relative;
+            i{
+                font-size: small;
+                position: absolute;
+                right: 20px;
+            }
+        }
+        .fa-heart{
+            position: absolute;
+            padding: 15px;
+            border: 1px solid black;
+            right: 3px;
+            top: 605px;
+            &:hover{
+                color: $heart;
+            }
+        }
+        label{
+            display: flex;
+            flex-direction: column;
+            #størrelse{
+                margin: 20px 0 0 0;
+                padding: 10px;
+                width: 410px;
+                &:hover{
+                    border: 2px solid black;
+                }
+            }
+        }
     }
 }

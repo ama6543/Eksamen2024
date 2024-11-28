@@ -62,7 +62,7 @@
                 <p id="shopfarg">Farge:<strong>hvit</strong></p>
                 <form id="shopselect">
                     <label>Størrelse
-                        <select id="størrelse2" name="størrelse" required>
+                        <select name="størrelse">
                            <option value="XXS">XXS</option>
                            <option value="XS">XS</option>
                            <option value="S" selected="selected">S</option>
@@ -84,7 +84,7 @@
                  <p id="shopfarg2">Farge:<strong>hvit</strong></p>
                  <form id="shopselect2">
                   <label>Størrelse
-                    <select id="størrelse2" name="størrelse" required>
+                    <select name="størrelse">
                         <option value="XXS">XXS</option>
                         <option value="XS">XS</option>
                         <option value="S" selected="selected">S</option>
@@ -106,7 +106,7 @@
                 <p id="shopfarg3">Farge:<strong>hvit</strong></p>
                 <form id="shopselect3">
                     <label>Størrelse
-                        <select id="størrelse2" name="størrelse" required>
+                        <select name="størrelse">
                             <option value="XXS">XXS</option>
                             <option value="XS">XS</option>
                             <option value="S" selected="selected">S</option>
@@ -128,13 +128,13 @@
                 <p id="textinfo">Leveringsadresse</p>
                 <form id="Leveringsadresse">
                  <label id="fornavn" for="name">Fornavn
-                     <input type="usename"id="name" placeholder="Sara*">
+                     <input type="text" id="name" placeholder="Sara*">
                  </label>
                  <label id="etternavn">Etternavn
                      <input type="text" placeholder="Olsen*">
                  </label>
                  <label id="gateadresse">Gateadresse
-                     <input type="adresse" placeholder="BRA veien 4*">
+                     <input type="text" placeholder="BRA veien 4*">
                   </label>  
                   <label id="postnummer">Postnummer
                       <input type="number" placeholder="1752*">
@@ -164,7 +164,7 @@
                        <input type="radio" name="valg" id="Hjem">
                        </label>
                        <p class="dager">3-4 Virkedager</p>
-                       <p id="ikonlevering">59kr <i class="fa-solid fa-truck-fast"></i></p>
+                       <p>59kr <i class="fa-solid fa-truck-fast"></i></p>
                        <p>bestill hverdag før 08:00* for levering neste arbeidsdag. leveres hjem til deg før frokost mandag til lørdag. *Før levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager</p>
                     </div>
                      <div class="form1">
@@ -172,7 +172,7 @@
                      <input type="radio" id="utleveringsted" name="valg">
                      </label>
                      <p class="dager">1-3 Virkedager</p>
-                     <p id="ikonlevering">59kr <i class="fa-solid fa-inbox"></i></p>
+                     <p>59kr <i class="fa-solid fa-inbox"></i></p>
                    </div>
                     <div class="form1">
                      <label for="standard">Standard Hjemlevering
@@ -204,12 +204,11 @@
                 <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger</p>
                 <label id="jatakk">
                 <input type="checkbox">
-                Ja takk! Send nyhetsbrev til meg.
+                 Ja takk! Send nyhetsbrev til meg.
                 </label>
-                <lable id="ønsker">
+                <label id="ønsker"></label>
                  <input type="checkbox">
                  Ja ønsker å motta tekstmeldinger med tilbud og nyheter.
-                </label>
             </section>
          </main>
          <footer id="informasjon">
@@ -238,6 +237,9 @@
                      <li>
                          <a href="#kontakt">Kontakt oss</a>
                      </li>
+                     <li>
+                        <a href="https://hiof-my.sharepoint.com/personal/amandajs_hiof_no/Documents/Mal%20%E2%80%93%C2%A0WCAG-sjekkliste%20for%20utfylling%20av%20tilgjengelighetserkl%C3%A6ring%20for%20nettside1%2024.01.2024.pdf">Tilgjenglighetserklæringen</a>
+                      </li>
                   </ul>
                 </nav>  
             </section>

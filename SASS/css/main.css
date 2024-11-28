@@ -322,6 +322,7 @@ ul.breadcrumb li a:hover {
     align-items: center;
     width: 300px;
     gap: 1rem;
+    min-height: 1400px;
     grid-template-areas: "item1" "item2" "item3" "item3" "item4" "item5";
   }
   #container img {
@@ -374,6 +375,7 @@ ul.breadcrumb li a:hover {
     padding: 0;
     width: 400px;
     height: 200px;
+    max-height: 200px;
   }
   #item-4 h3 {
     margin: 0;
@@ -411,212 +413,247 @@ ul.breadcrumb li a:hover {
     justify-content: center;
   }
 }
-@media only screen and (max-device-width: 800px) and (min-device-width: 1100px) {
-  #container {
-    margin: 0 auto;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    max-width: 1000px;
-    gap: 1rem;
-    grid-template-areas: "item1 item2" "item3 item4" "item3 item5";
-  }
-  #container img {
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  #item-1 {
-    position: relative;
-    grid-area: item1;
-    margin: 0;
-    padding: 0;
-    height: 250px;
-    width: 400px;
-  }
-  #item-1 h3 {
-    margin: 0;
-    padding: 0;
-  }
-  #item-2 {
-    position: relative;
-    grid-area: item2;
-    margin: 0;
-    padding: 0;
-    height: 250px;
-    width: 400px;
-  }
-  #item-2 h3 {
-    margin: 0;
-    padding: 0;
-  }
-  #item-3 {
-    position: relative;
-    grid-area: item3;
-    margin: 0;
-    padding: 0;
-    width: 400px;
-    height: 530px;
-  }
-  #item-3 h3 {
-    margin: 0;
-    padding: 0;
-  }
-  #item-4 {
-    position: relative;
-    grid-area: item4;
-    margin: 0;
-    padding: 0;
-    width: 400px;
-    height: 250px;
-  }
-  #item-4 h3 {
-    margin: 0;
-    padding: 0;
-  }
-  #item-5 {
-    position: relative;
-    grid-area: item5;
-    margin: 0;
-    padding: 0;
-    width: 400px;
-    height: 250px;
-  }
-  #item-5 h3 {
-    margin: 0;
-    padding: 0;
-  }
-  .overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin: 0;
-    padding: 0;
-  }
-  #Kategorier h2 {
-    display: grid;
-    justify-content: center;
-  }
-  #Kategorier p {
-    display: flex;
-    justify-content: center;
-  }
-}
 /*hovedområde på produkt.html side*/
-#main-produkt {
-  position: relative;
-  display: grid;
-  gap: 10px;
-  max-width: 1195px;
-  max-height: 800px;
-  overflow: scroll;
-  grid-template-areas: "small1 big big produkt-info produkt-info" "small2 big big produkt-info produkt-info" "small3 big big produkt-info produkt-info" ". . . produkt-info produkt-info";
+@media only screen and (min-width: 800px) {
+  #main-produkt {
+    position: relative;
+    display: grid;
+    gap: 10px;
+    max-width: 1195px;
+    max-height: 800px;
+    overflow: scroll;
+    grid-template-areas: "small1 big big produkt-info produkt-info" "small2 big big produkt-info produkt-info" "small3 big big produkt-info produkt-info" ". . . produkt-info produkt-info";
+  }
+  #legg-i input {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    width: 350px;
+    margin: 10px 0 40px 0;
+  }
+  #legg-i input:hover {
+    background-color: rgb(75, 75, 75);
+  }
+  #small-1 {
+    grid-area: small1;
+    width: 250px;
+    height: 250px;
+  }
+  #small-2 {
+    grid-area: small2;
+    width: 250px;
+    height: 250px;
+  }
+  #small-3 {
+    grid-area: small3;
+    width: 250px;
+    height: 250px;
+  }
+  #big {
+    grid-area: big;
+    width: 500px;
+    min-height: 770px;
+  }
+  #produkt-info {
+    text-align: start;
+    grid-area: produkt-info;
+    font-size: medium;
+  }
+  #produkt-info .ad-label {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    cursor: pointer;
+    position: relative;
+  }
+  #produkt-info .ad-label .fa-star {
+    display: inline;
+  }
+  #produkt-info .ad-label #rate {
+    position: absolute;
+    left: 280px;
+    margin: 0;
+  }
+  #produkt-info .ad-label #rate i {
+    font-size: small;
+  }
+  #produkt-info .ad-label #rate2 {
+    position: absolute;
+    left: 300px;
+    margin: 0;
+  }
+  #produkt-info .ad-label #rate2 i {
+    font-size: small;
+  }
+  #produkt-info .ad-label #rate3 {
+    position: absolute;
+    left: 323px;
+    margin: 0;
+  }
+  #produkt-info .ad-label #rate3 i {
+    font-size: small;
+  }
+  #produkt-info .ad-label #rate4 {
+    position: absolute;
+    left: 345px;
+    margin: 0;
+  }
+  #produkt-info .ad-label #rate4 i {
+    font-size: small;
+  }
+  #produkt-info .ad-label #rate5 {
+    position: absolute;
+    right: 20px;
+    margin: 0;
+  }
+  #produkt-info .ad-label #rate5 i {
+    font-size: small;
+  }
+  #produkt-info h3 {
+    margin: 20px 0 10px 0;
+  }
+  #produkt-info .tre {
+    border-bottom: 1px solid rgb(75, 75, 75);
+  }
+  #produkt-info .accordion_label {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    border-top: 1px solid rgb(75, 75, 75);
+    cursor: pointer;
+    position: relative;
+  }
+  #produkt-info .accordion_label i {
+    font-size: small;
+    position: absolute;
+    right: 20px;
+  }
+  #produkt-info .fa-heart {
+    position: absolute;
+    padding: 14px;
+    border: 1px solid black;
+    right: 3px;
+    top: 270px;
+  }
+  #produkt-info .fa-heart:hover {
+    color: rgba(251, 56, 56, 0.5);
+  }
+  #produkt-info label {
+    display: flex;
+    flex-direction: column;
+  }
+  #produkt-info label #størrelse {
+    margin: 20px 0 0 0;
+    padding: 10px;
+    width: 410px;
+  }
+  #produkt-info label #størrelse:hover {
+    border: 2px solid black;
+  }
 }
-
-#small-1 {
-  grid-area: small1;
-  width: 250px;
-  height: 250px;
+@media only screen and (max-width: 800px) {
+  #main-produkt {
+    position: relative;
+    display: grid;
+    gap: 10px;
+    max-width: 410px;
+    height: 1100px;
+    overflow-y: auto;
+    margin: 0 auto;
+    grid-template-areas: "small1 big big" "small2 big big" "small3 big big" "produkt-info produkt-info produkt-info" "produkt-info produkt-info produkt-info" "produkt-info produkt-info produkt-info";
+  }
+  #legg-i input {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    width: 350px;
+    margin: 10px 0 40px 0;
+  }
+  #legg-i input:hover {
+    background-color: rgb(75, 75, 75);
+  }
+  #small-1 {
+    grid-area: small1;
+    width: 100px;
+    height: 100px;
+  }
+  #small-2 {
+    grid-area: small2;
+    width: 100px;
+    height: 100px;
+  }
+  #small-3 {
+    grid-area: small3;
+    width: 100px;
+    height: 100px;
+  }
+  #big {
+    grid-area: big;
+    width: 300px;
+    height: 358px;
+  }
+  #produkt-info {
+    text-align: start;
+    grid-area: produkt-info;
+    font-size: medium;
+  }
+  #produkt-info .ad-label {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    cursor: pointer;
+    position: relative;
+  }
+  #produkt-info .ad-label #rate {
+    position: absolute;
+    right: 20px;
+    margin: 0;
+  }
+  #produkt-info .ad-label #rate i {
+    font-size: small;
+  }
+  #produkt-info h3 {
+    margin: 20px 0 10px 0;
+  }
+  #produkt-info .tre {
+    border-bottom: 1px solid rgb(75, 75, 75);
+  }
+  #produkt-info .accordion_label {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    border-top: 1px solid rgb(75, 75, 75);
+    cursor: pointer;
+    position: relative;
+  }
+  #produkt-info .accordion_label i {
+    font-size: small;
+    position: absolute;
+    right: 20px;
+  }
+  #produkt-info .fa-heart {
+    position: absolute;
+    padding: 15px;
+    border: 1px solid black;
+    right: 3px;
+    top: 605px;
+  }
+  #produkt-info .fa-heart:hover {
+    color: rgba(251, 56, 56, 0.5);
+  }
+  #produkt-info label {
+    display: flex;
+    flex-direction: column;
+  }
+  #produkt-info label #størrelse {
+    margin: 20px 0 0 0;
+    padding: 10px;
+    width: 410px;
+  }
+  #produkt-info label #størrelse:hover {
+    border: 2px solid black;
+  }
 }
-
-#small-2 {
-  grid-area: small2;
-  width: 250px;
-  height: 250px;
-}
-
-#small-3 {
-  grid-area: small3;
-  width: 250px;
-  height: 250px;
-}
-
-#big {
-  grid-area: big;
-  width: 500px;
-  min-height: 770px;
-}
-
-#produkt-info {
-  text-align: start;
-  grid-area: produkt-info;
-  font-size: medium;
-}
-#produkt-info .ad-label {
-  display: flex;
-  flex-direction: column;
-  padding: 40px 0;
-  cursor: pointer;
-  position: relative;
-}
-#produkt-info .ad-label #rate {
-  position: absolute;
-  right: 20px;
-  margin: 0;
-}
-#produkt-info .ad-label #rate i {
-  font-size: small;
-}
-#produkt-info h3 {
-  margin: 20px 0 10px 0;
-}
-#produkt-info .tre {
-  border-bottom: 1px solid rgb(75, 75, 75);
-}
-#produkt-info .accordion_label {
-  display: flex;
-  flex-direction: column;
-  padding: 40px 0;
-  border-top: 1px solid rgb(75, 75, 75);
-  cursor: pointer;
-  position: relative;
-}
-#produkt-info .accordion_label i {
-  font-size: small;
-  position: absolute;
-  right: 20px;
-}
-#produkt-info .fa-heart {
-  position: absolute;
-  padding: 14px;
-  border: 1px solid black;
-  right: 3px;
-  top: 270px;
-}
-#produkt-info .fa-heart:hover {
-  color: rgba(251, 56, 56, 0.5);
-}
-#produkt-info label {
-  display: flex;
-  flex-direction: column;
-}
-#produkt-info label #størrelse {
-  margin: 20px 0 0 0;
-  padding: 10px;
-  width: 410px;
-}
-#produkt-info label #størrelse:hover {
-  border: 2px solid black;
-}
-
-#legg-i input {
-  background-color: black;
-  color: white;
-  padding: 15px;
-  width: 350px;
-  margin: 10px 0 40px 0;
-}
-#legg-i input:hover {
-  background-color: rgb(75, 75, 75);
-}
-
 @media only screen and (min-width: 1200px) {
   footer {
     text-align: start;
@@ -910,22 +947,23 @@ ul.breadcrumb li a:hover {
   text-align: start;
 }
 #lingnende-produkter h3 {
-  display: inline-block;
+  text-align: start;
+  display: inline;
 }
 #lingnende-produkter #sflp {
-  display: inline-block;
+  display: inline;
   text-decoration: none;
-  padding-left: 630px;
+  padding-left: 560px;
 }
 
 #flex-container2 {
   display: flex;
   gap: 1rem;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 #flex-container2 img {
-  width: 373px;
-  height: 350px;
+  min-width: 300px;
+  min-height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
@@ -1704,4 +1742,8 @@ i {
 
 label {
   font-size: 0.7rem;
+}
+
+picture img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
