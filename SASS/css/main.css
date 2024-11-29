@@ -1364,7 +1364,7 @@ ul.breadcrumb li a:hover {
     padding: 40px 0;
   }
   #checkout-1 h3 {
-    margin: 0 auto;
+    margin: 10px auto;
     display: block;
     width: 600px;
     text-align: start;
@@ -1496,8 +1496,10 @@ ul.breadcrumb li a:hover {
     padding: 40px 0;
   }
   #checkout-2 h3 {
-    text-align: center;
-    margin: 20px 40px 10px 40px;
+    margin: 10px auto;
+    display: block;
+    width: 600px;
+    text-align: start;
     text-transform: uppercase;
   }
   #checkout-2 p {
@@ -1576,7 +1578,10 @@ ul.breadcrumb li a:hover {
     padding: 20px 0;
   }
   #checkout-3 h3 {
-    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 600px;
+    text-align: start;
     text-transform: uppercase;
   }
   #checkout-3 #levvalg {
@@ -1618,7 +1623,10 @@ ul.breadcrumb li a:hover {
     flex-direction: column;
   }
   #checkout-4 h3 {
-    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 600px;
+    text-align: start;
     text-transform: uppercase;
   }
   #checkout-4 p {
@@ -1641,6 +1649,7 @@ ul.breadcrumb li a:hover {
     width: 600px;
     font-size: 0.7rem;
     margin: 10px auto;
+    font-size: 0.7rem;
   }
   #checkout-4 #betal {
     font-weight: 800;

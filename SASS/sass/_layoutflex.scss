@@ -416,7 +416,7 @@ position: relative;
         position: relative;
         padding: 40px 0;
         h3{
-            margin: 0 auto;
+            margin: 10px auto;
             display: block;
             width: 600px;
             text-align: start;
@@ -548,8 +548,10 @@ position: relative;
         border: 1px solid $grey;
         padding: 40px 0;
         h3{
-            text-align: center;
-            margin: 20px 40px 10px 40px;
+            margin: 10px auto;
+            display: block;
+            width: 600px;
+            text-align: start;
             text-transform: uppercase;
         }
         p{
@@ -630,7 +632,10 @@ position: relative;
         text-align: center;
         padding: 20px 0;
         h3{
-            text-align: center;
+            margin: 0 auto;
+            display: block;
+            width: 600px;
+            text-align: start;
             text-transform: uppercase;
         }
         #levvalg{
@@ -672,7 +677,10 @@ position: relative;
         justify-content: center;
         flex-direction: column;
         h3{
-            text-align: center;
+            margin: 0 auto;
+            display: block;
+            width: 600px;
+            text-align: start;
             text-transform: uppercase;
         }
         p{
@@ -695,6 +703,7 @@ position: relative;
             width: 600px;
             font-size: 0.7rem;
             margin: 10px auto;
+            font-size: 0.7rem;
         }
         #betal{
             font-weight: 800;
