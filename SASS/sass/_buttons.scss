@@ -16,7 +16,8 @@
 }
 .accordion__input:checked ~ .accordion-content{
     display: block;
-    margin: 30px 0 0 0;
+    margin: 30px 0 30px 0;
+    width: 360px;
 }
 .accordion-content{
     display: none;
@@ -24,14 +25,26 @@
 .accordion__input{
     display: none;
 }
-.accordion__input:checked ~ .accordion-content2{
+.accordion__input4:checked ~ #accordion-content4{
+    display: block;
+    margin: 30px 0 30px 0;
+    width: 360px;
+    font-size: medium;
+}
+.accordion__input4{
+    display: none;
+}
+#accordion-content4{
+    display: none;
+}
+.accordion__input2:checked ~ #accordion-content2{
     display: flex;
     flex-direction: column;
     padding: 10px;
     border: 1px solid $grey;
     border-radius: 10px;
     width: 360px;
-    margin: 25px 1em 0 1em;
+    margin: 20px 1em 0 1em;
     p{
         text-align: start;
         margin: 0;
@@ -41,6 +54,28 @@
         font-size: medium;
     }
 }
-.accordion-content2{
+#accordion-content2{
     display: none;
+}
+.accordion__input2{
+    display: none;
+}
+.accordion__input3:checked ~ .accordion-content3{
+    display: block;
+    margin: 30px 0;
+    width: 360px;
+    font-size: medium;
+}
+.accordion-content3{
+    display: none;
+}
+.accordion__input3{
+    display: none;
+}
+.ad-label::after{
+ content: '32';
+ position: absolute;
+ right: 20px;
+ margin: 0;
+ font-size: medium;
 }
